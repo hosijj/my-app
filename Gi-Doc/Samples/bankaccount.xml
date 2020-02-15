@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<bankAccount>
-    <balance>9800</balance>
-    <number>1234</number>
-    <owner>ACM</owner>
-</bankAccount>
