@@ -1,0 +1,52 @@
+**********************************************************************************************************************************
+
+
+********************* 1 *********************************************** quick samples with code *********************************************************************
+https://www.baeldung.com/java-microsoft-word-with-apache-poi
+
+
+
+********************* 2 ******************************************** sample *****************************************************************************************
+
+XWPFDocument doc = new XWPFDocument(OPCPackage.open("input.docx"));
+for (XWPFParagraph p : doc.getParagraphs()) {
+    List<XWPFRun> runs = p.getRuns();
+    if (runs != null) {
+        for (XWPFRun r : runs) {
+            String text = r.getText(0);
+            if (text != null && text.contains("needle")) {
+                text = text.replace("needle", "haystack");
+                r.setText(text, 0);
+            }
+        }
+    }
+}
+for (XWPFTable tbl : doc.getTables()) {
+   for (XWPFTableRow row : tbl.getRows()) {
+      for (XWPFTableCell cell : row.getTableCells()) {
+         for (XWPFParagraph p : cell.getParagraphs()) {
+            for (XWPFRun r : p.getRuns()) {
+              String text = r.getText(0);
+              if (text != null && text.contains("needle")) {
+                text = text.replace("needle", "haystack");
+                r.setText(text,0);
+              }
+            }
+         }
+      }
+   }
+}
+doc.write(new FileOutputStream("output.docx"));
+********************* 3 ******************************************** sample from Apachi POI   ***********************************************************************
+includes images and ... 
+
+https://svn.apache.org/repos/asf/tika/trunk/tika-parsers/src/main/java/org/apache/tika/parser/microsoft/WordExtractor.java
+
+
+and 
+
+http://svn.apache.org/repos/asf/tika/trunk/tika-parsers/src/main/java/org/apache/tika/parser/microsoft/ooxml/XWPFWordExtractorDecorator.java
+
+and 
+
+https://stackoverflow.com/questions/44280677/how-to-get-pictures-and-tables-from-docx-document-using-apache-poi

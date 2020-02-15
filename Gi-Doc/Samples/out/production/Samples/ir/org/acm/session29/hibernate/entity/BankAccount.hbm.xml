@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    
+  <class name="ir.org.acm.session29.hibernate.entity.BankAccount" table="tbl_account">
+    <id column="f_id" name="id"/>
+    <property column="f_number" name="number"/>
+    <property column="f_owner" name="owner"/>
+    <property column="f_balance" name="balance"/>
+  </class>
+  
+</hibernate-mapping>

@@ -1,0 +1,407 @@
+FileType = History
+FileFormatRev = 0
+Application = "GER"
+
+ApplicationSetup1 = YXFm
+ApplicationSetup2 = c1pGVUlFTVJUV0NE
+
+Begin Patient
+    Patient = "Lois BARRETT-SMITH"
+    PatientFirstName = "Lois"
+    PatientLastName = "BARRETT-SMITH"
+    PatientId = "E2445599"
+    PatientDOB = "2000-08-31"
+    Exported = "Yes"
+    Hospital = "London Bridge Hospital"
+    Physician = "DR WONG"
+    StudyPerformedBy = "DR JAFAR JAFARI"
+    Date = "2019-12-16"
+    Time = "15:42:15"
+    PatientSex = Female
+End Patient
+
+Begin Procedure
+    ProtocolName = "44"
+    ProtocolRevision = "Rev. 3.3"
+    ProtocolPartNumber = "Z00-9101"
+    ProtocolFileName = "Z009101.lpr"
+    AtoDBits = 12  ; 0xc
+    AtoDMaxChannels = 48  ; 0x30
+    AtoDType = "Z-Logger"
+    Date = "2019-12-16"
+    Time = "17:10:48"
+    SampleRate = 50
+    NumChannelsRecorded = 8  ; 0x8
+    NumWheezeChannelsRecorded = 0  ; 0
+    ProxLESDistanceToReference01 = -5
+    LESProfileChannel = 7  ; 0x7
+    UESProfileChannel = NAN
+    LoggerFirmwareVer = "2.3.0"
+    LoggerVer = "02"
+    LoggerSN = "L129016C/"
+    ProbeNumber = "ZAI-BG-44"
+    ProbeVer = "001"
+    ProbeSN = "002147405"
+    ProbeUsageLeft = "255"
+    SleuthPCVer = "2.4.2"
+    Begin Channel   ; 1
+        AToDChannel = 8  ; 0x8
+        Type = CHTYPE_Z
+        DistanceToReference = 12
+        DistanceToReference2 = NAN
+        DisplayRange = "5000"
+        DefaultSiteName = "ESOB"
+        DefaultSiteText = "body"
+        Color = "192, 48, 192"
+        ProtocolColor = "192, 48, 192"
+        Flags = 7  ; 0x7
+        CalibrationDate = "2019-12-16"
+        CalibrationTime = "16:43:49"
+        CalibrationMeasuredOffset = 0  ; 0
+        CalibrationDeltaMeasured = 2048  ; 0x800
+        CalibrationPhysicalOffset = 0
+        CalibrationDeltaPhysical = 5001
+        CalibrationUnits = "       Z"
+    End Channel   ; 1
+    Begin Channel   ; 2
+        AToDChannel = 9  ; 0x9
+        Type = CHTYPE_Z
+        DistanceToReference = 10
+        DistanceToReference2 = NAN
+        DisplayRange = "5000"
+        DefaultSiteName = "ESOB"
+        DefaultSiteText = "body"
+        Color = "0, 128, 255"
+        ProtocolColor = "0, 128, 255"
+        Flags = 7  ; 0x7
+        CalibrationDate = "2019-12-16"
+        CalibrationTime = "16:43:50"
+        CalibrationMeasuredOffset = 0  ; 0
+        CalibrationDeltaMeasured = 2048  ; 0x800
+        CalibrationPhysicalOffset = 0
+        CalibrationDeltaPhysical = 5001
+        CalibrationUnits = "       Z"
+    End Channel   ; 2
+    Begin Channel   ; 3
+        AToDChannel = 10  ; 0xa
+        Type = CHTYPE_Z
+        DistanceToReference = 4
+        DistanceToReference2 = NAN
+        DisplayRange = "5000"
+        DefaultSiteName = "ESOB"
+        DefaultSiteText = "body"
+        Color = "255, 64, 128"
+        ProtocolColor = "255, 64, 128"
+        Flags = 7  ; 0x7
+        CalibrationDate = "2019-12-16"
+        CalibrationTime = "16:43:50"
+        CalibrationMeasuredOffset = 0  ; 0
+        CalibrationDeltaMeasured = 2048  ; 0x800
+        CalibrationPhysicalOffset = 0
+        CalibrationDeltaPhysical = 5001
+        CalibrationUnits = "       Z"
+    End Channel   ; 3
+    Begin Channel   ; 4
+        AToDChannel = 11  ; 0xb
+        Type = CHTYPE_Z
+        DistanceToReference = 2
+        DistanceToReference2 = NAN
+        DisplayRange = "5000"
+        DefaultSiteName = "ESOB"
+        DefaultSiteText = "body"
+        Color = "44, 166, 40"
+        ProtocolColor = "44, 166, 40"
+        Flags = 7  ; 0x7
+        CalibrationDate = "2019-12-16"
+        CalibrationTime = "16:43:51"
+        CalibrationMeasuredOffset = 0  ; 0
+        CalibrationDeltaMeasured = 2048  ; 0x800
+        CalibrationPhysicalOffset = 0
+        CalibrationDeltaPhysical = 5001
+        CalibrationUnits = "       Z"
+    End Channel   ; 4
+    Begin Channel   ; 5
+        AToDChannel = 12  ; 0xc
+        Type = CHTYPE_Z
+        DistanceToReference = 0
+        DistanceToReference2 = NAN
+        DisplayRange = "5000"
+        DefaultSiteName = "ESOB"
+        DefaultSiteText = "body"
+        Color = "255, 0, 255"
+        ProtocolColor = "255, 0, 255"
+        Flags = 7  ; 0x7
+        CalibrationDate = "2019-12-16"
+        CalibrationTime = "16:43:51"
+        CalibrationMeasuredOffset = 0  ; 0
+        CalibrationDeltaMeasured = 2048  ; 0x800
+        CalibrationPhysicalOffset = 0
+        CalibrationDeltaPhysical = 5001
+        CalibrationUnits = "       Z"
+    End Channel   ; 5
+    Begin Channel   ; 6
+        AToDChannel = 13  ; 0xd
+        Type = CHTYPE_Z
+        DistanceToReference = -2
+        DistanceToReference2 = NAN
+        DisplayRange = "5000"
+        DefaultSiteName = "ESOB"
+        DefaultSiteText = "body"
+        Color = "0, 163, 198"
+        ProtocolColor = "0, 163, 198"
+        Flags = 7  ; 0x7
+        CalibrationDate = "2019-12-16"
+        CalibrationTime = "16:43:52"
+        CalibrationMeasuredOffset = 0  ; 0
+        CalibrationDeltaMeasured = 2048  ; 0x800
+        CalibrationPhysicalOffset = 0
+        CalibrationDeltaPhysical = 5001
+        CalibrationUnits = "       Z"
+    End Channel   ; 6
+    Begin Channel   ; 7
+        AToDChannel = 14  ; 0xe
+        Type = CHTYPE_PH
+        DistanceToReference = 0
+        DistanceToReference2 = NAN
+        DisplayRange = "8"
+        DefaultSiteName = "ESOB"
+        DefaultSiteText = "body"
+        Color = "255, 0, 0"
+        ProtocolColor = "255, 0, 0"
+        Flags = 7  ; 0x7
+        CalibrationDate = "2019-12-16"
+        CalibrationTime = "16:43:52"
+        CalibrationMeasuredOffset = 1103  ; 0x44f
+        CalibrationDeltaMeasured = 728  ; 0x2d8
+        CalibrationPhysicalOffset = 3.6
+        TempCompOffset = -0.4
+        CalibrationDeltaPhysical = 3
+        CalibrationUnits = " pH4,pH7"
+    End Channel   ; 7
+    Begin Channel   ; 8
+        AToDChannel = 15  ; 0xf
+        Type = CHTYPE_PH
+        DistanceToReference = -15
+        DistanceToReference2 = NAN
+        DisplayRange = "8"
+        DefaultSiteName = "GAST"
+        DefaultSiteText = "gastric"
+        Color = "255, 128, 0"
+        ProtocolColor = "255, 128, 0"
+        Flags = 7  ; 0x7
+        CalibrationDate = "2019-12-16"
+        CalibrationTime = "16:43:53"
+        CalibrationMeasuredOffset = 1108  ; 0x454
+        CalibrationDeltaMeasured = 666  ; 0x29a
+        CalibrationPhysicalOffset = 3.6
+        TempCompOffset = -0.4
+        CalibrationDeltaPhysical = 3
+        CalibrationUnits = " pH4,pH7"
+    End Channel   ; 8
+    Begin Study   ; 1
+        Name = "Reflux"
+        StudyType = "ZpHReflux"
+        Begin StudySpecialZESOB   ; 1
+            BaseStudyType = "ZpHReflux"
+            ZProxMigrationChannel = 2  ; 0x2
+            ZClearanceChannel = 5  ; 0x5
+            DistChannel = 6  ; 0x6
+            pHClearanceChannel = 7  ; 0x7
+        End StudySpecialZESOB   ; 1
+    End Study
+    Begin Study   ; 2
+        Name = "MII Swallow"
+        StudyType = "ZSWALLOW"
+        Begin StudySpecialZESOB   ; 2
+            BaseStudyType = "ZSWALLOW"
+            TotalProxChannel = 1  ; 0x1
+            DistChannel = 5  ; 0x5
+        End StudySpecialZESOB   ; 2
+    End Study
+    Begin Event   ; 1
+        Type = "$EMealStart"
+        Text = "Meal Start"
+        Caption = "MealStart"
+        StripChartFileIndex = 237952  ; 0x3a180
+        NumberOfSamples = 0  ; 0
+        Time = "17:15:46"
+        Date = "2019-12-16"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 1  ; 0x1
+        EndEvent = "$EMealEnd"
+        MergeIntoEvent = "$EMeal"
+    End Event   ; 1
+    Begin Event   ; 2
+        Type = "$EMealEnd"
+        Text = "Meal End"
+        Caption = "MealEnd"
+        StripChartFileIndex = 239424  ; 0x3a740
+        NumberOfSamples = 0  ; 0
+        Time = "17:15:48"
+        Date = "2019-12-16"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 2  ; 0x2
+    End Event   ; 2
+    Begin Event   ; 3
+        Type = "$ESupineStart"
+        Text = "RecumbStart"
+        Caption = "RecumbentStart"
+        StripChartFileIndex = 252944  ; 0x3dc10
+        NumberOfSamples = 0  ; 0
+        Time = "17:16:05"
+        Date = "2019-12-16"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 1  ; 0x1
+        EndEvent = "$ESupineEnd"
+        MergeIntoEvent = "$ESupine"
+    End Event   ; 3
+    Begin Event   ; 4
+        Type = "$ESupineEnd"
+        Text = "RecumbEnd"
+        Caption = "RecumbentEnd"
+        StripChartFileIndex = 254640  ; 0x3e2b0
+        NumberOfSamples = 0  ; 0
+        Time = "17:16:07"
+        Date = "2019-12-16"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 2  ; 0x2
+    End Event   ; 4
+    Begin Event   ; 5
+        Type = "$EMealStart"
+        Text = "Meal Start"
+        Caption = "MealStart"
+        StripChartFileIndex = 6542976  ; 0x63d680
+        NumberOfSamples = 0  ; 0
+        Time = "19:27:07"
+        Date = "2019-12-16"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 1  ; 0x1
+        EndEvent = "$EMealEnd"
+        MergeIntoEvent = "$EMeal"
+    End Event   ; 5
+    Begin Event   ; 6
+        Type = "$EMealEnd"
+        Text = "Meal End"
+        Caption = "MealEnd"
+        StripChartFileIndex = 8163888  ; 0x7c9230
+        NumberOfSamples = 0  ; 0
+        Time = "20:00:53"
+        Date = "2019-12-16"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 2  ; 0x2
+    End Event   ; 6
+    Begin Event   ; 7
+        Type = "$EMealStart"
+        Text = "Meal Start"
+        Caption = "MealStart"
+        StripChartFileIndex = 12477984  ; 0xbe6620
+        NumberOfSamples = 0  ; 0
+        Time = "21:30:45"
+        Date = "2019-12-16"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 1  ; 0x1
+        EndEvent = "$EMealEnd"
+        MergeIntoEvent = "$EMeal"
+    End Event   ; 7
+    Begin Event   ; 8
+        Type = "$EMealEnd"
+        Text = "Meal End"
+        Caption = "MealEnd"
+        StripChartFileIndex = 12740464  ; 0xc26770
+        NumberOfSamples = 0  ; 0
+        Time = "21:36:13"
+        Date = "2019-12-16"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 2  ; 0x2
+    End Event   ; 8
+    Begin Event   ; 9
+        Type = "$ESupineStart"
+        Text = "RecumbStart"
+        Caption = "RecumbentStart"
+        StripChartFileIndex = 18884384  ; 0x1202720
+        NumberOfSamples = 0  ; 0
+        Time = "23:44:13"
+        Date = "2019-12-16"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 1  ; 0x1
+        EndEvent = "$ESupineEnd"
+        MergeIntoEvent = "$ESupine"
+    End Event   ; 9
+    Begin Event   ; 10
+        Type = "$ESupineEnd"
+        Text = "RecumbEnd"
+        Caption = "RecumbentEnd"
+        StripChartFileIndex = 55000768  ; 0x3473ec0
+        NumberOfSamples = 0  ; 0
+        Time = "12:16:36"
+        Date = "2019-12-17"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 2  ; 0x2
+    End Event   ; 10
+    Begin Event   ; 11
+        Type = "$EMealStart"
+        Text = "Meal Start"
+        Caption = "MealStart"
+        StripChartFileIndex = 56914240  ; 0x3647140
+        NumberOfSamples = 0  ; 0
+        Time = "12:56:28"
+        Date = "2019-12-17"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 1  ; 0x1
+        EndEvent = "$EMealEnd"
+        MergeIntoEvent = "$EMeal"
+    End Event   ; 11
+    Begin Event   ; 12
+        Type = "$EMealEnd"
+        Text = "Meal End"
+        Caption = "MealEnd"
+        StripChartFileIndex = 60098528  ; 0x39507e0
+        NumberOfSamples = 0  ; 0
+        Time = "14:02:48"
+        Date = "2019-12-17"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 2  ; 0x2
+    End Event   ; 12
+    Begin Event   ; 13
+        Type = "$EMealEnd"
+        Text = "Meal End"
+        Caption = "MealEnd"
+        StripChartFileIndex = 65847936  ; 0x3ecc280
+        NumberOfSamples = 0  ; 0
+        Time = "16:02:34"
+        Date = "2019-12-17"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 2  ; 0x2
+    End Event   ; 13
+    Begin Event   ; 14
+        Type = "$ESymptom1"
+        Text = "Symptom-1"
+        Caption = "Symptom1"
+        StripChartFileIndex = 65848832  ; 0x3ecc600
+        NumberOfSamples = 0  ; 0
+        Time = "16:02:35"
+        Date = "2019-12-17"
+        Flags = 0  ; 0
+    End Event   ; 14
+    Begin Recording
+        StartingStripChartFileIndex = 0  ; 0
+        StartingTime = "17:10:48"
+        StartingDate = "2019-12-16"
+        EndingStripChartFileIndex = 65862656  ; 0x3ecfc00
+        EndingTime = "16:02:56"
+        EndingDate = "2019-12-17"
+    End Recording
+End Procedure

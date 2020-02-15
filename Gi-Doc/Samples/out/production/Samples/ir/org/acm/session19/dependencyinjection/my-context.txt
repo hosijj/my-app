@@ -1,0 +1,4 @@
+#id=impl_class
+bank=ir.org.acm.session19.dependencyinjection.MellatImpl
+
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<dependencies>
+
+   <dependency>
+      <groupId>myLib1</groupId>
+   </dependency>
+
+
+   <dependency>
+      <groupId>myLib2</groupId>
+   </dependency>
+
+</dependencies>

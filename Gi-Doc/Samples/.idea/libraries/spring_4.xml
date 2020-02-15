@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="spring-4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/commons-logging-1.1.1.jar!/" />
+      <root url="file://$PROJECT_DIR$/lib/spring-4" />
+      <root url="file://$PROJECT_DIR$/lib/weld" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/lib/weld" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/lib/spring-4" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/lib/weld" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/lib/weld" recursive="false" type="SOURCES" />
+  </library>
+</component>

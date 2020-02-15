@@ -1,0 +1,945 @@
+FileType = History
+FileFormatRev = 0
+Application = "GER"
+
+ApplicationSetup1 = YX9m
+ApplicationSetup2 = c1RGU0xFTF1UWUNG
+
+Begin Patient
+    Patient = "Ania DABROWSKA"
+    PatientFirstName = "Ania"
+    PatientLastName = "DABROWSKA"
+    PatientId = "E2458122"
+    PatientDOB = "1970-11-06"
+    Exported = "Yes"
+    Hospital = "London Bridge Hospital"
+    Physician = "Dr Jafari"
+    StudyPerformedBy = "DR JAFAR JAFARI"
+    Date = "2020-02-03"
+    Time = "17:25:28"
+    PatientSex = Female
+End Patient
+
+Begin Procedure
+    ProtocolName = "44"
+    ProtocolRevision = "Rev. 3.3"
+    ProtocolPartNumber = "Z00-9101"
+    ProtocolFileName = "Z009101.lpr"
+    AtoDBits = 12  ; 0xc
+    AtoDMaxChannels = 48  ; 0x30
+    AtoDType = "Z-Logger"
+    Date = "2020-02-03"
+    Time = "17:53:12"
+    SampleRate = 50
+    NumChannelsRecorded = 8  ; 0x8
+    NumWheezeChannelsRecorded = 0  ; 0
+    ProxLESDistanceToReference01 = -5
+    LESProfileChannel = 7  ; 0x7
+    UESProfileChannel = NAN
+    LoggerFirmwareVer = "2.3.0"
+    LoggerVer = "04"
+    LoggerSN = "G169021C/"
+    ProbeNumber = "ZAI-BG-44"
+    ProbeVer = "001"
+    ProbeSN = "002245260"
+    ProbeUsageLeft = "255"
+    SleuthPCVer = "2.4.2"
+    Begin Channel   ; 1
+        AToDChannel = 8  ; 0x8
+        Type = CHTYPE_Z
+        DistanceToReference = 12
+        DistanceToReference2 = NAN
+        DisplayRange = "5000"
+        DefaultSiteName = "ESOB"
+        DefaultSiteText = "body"
+        Color = "192, 48, 192"
+        ProtocolColor = "192, 48, 192"
+        Flags = 7  ; 0x7
+        CalibrationDate = "2020-02-03"
+        CalibrationTime = "17:24:04"
+        CalibrationMeasuredOffset = 0  ; 0
+        CalibrationDeltaMeasured = 2048  ; 0x800
+        CalibrationPhysicalOffset = 0
+        CalibrationDeltaPhysical = 5001
+        CalibrationUnits = "       Z"
+    End Channel   ; 1
+    Begin Channel   ; 2
+        AToDChannel = 9  ; 0x9
+        Type = CHTYPE_Z
+        DistanceToReference = 10
+        DistanceToReference2 = NAN
+        DisplayRange = "5000"
+        DefaultSiteName = "ESOB"
+        DefaultSiteText = "body"
+        Color = "0, 128, 255"
+        ProtocolColor = "0, 128, 255"
+        Flags = 7  ; 0x7
+        CalibrationDate = "2020-02-03"
+        CalibrationTime = "17:24:04"
+        CalibrationMeasuredOffset = 0  ; 0
+        CalibrationDeltaMeasured = 2048  ; 0x800
+        CalibrationPhysicalOffset = 0
+        CalibrationDeltaPhysical = 5001
+        CalibrationUnits = "       Z"
+    End Channel   ; 2
+    Begin Channel   ; 3
+        AToDChannel = 10  ; 0xa
+        Type = CHTYPE_Z
+        DistanceToReference = 4
+        DistanceToReference2 = NAN
+        DisplayRange = "5000"
+        DefaultSiteName = "ESOB"
+        DefaultSiteText = "body"
+        Color = "255, 64, 128"
+        ProtocolColor = "255, 64, 128"
+        Flags = 7  ; 0x7
+        CalibrationDate = "2020-02-03"
+        CalibrationTime = "17:24:05"
+        CalibrationMeasuredOffset = 0  ; 0
+        CalibrationDeltaMeasured = 2048  ; 0x800
+        CalibrationPhysicalOffset = 0
+        CalibrationDeltaPhysical = 5001
+        CalibrationUnits = "       Z"
+    End Channel   ; 3
+    Begin Channel   ; 4
+        AToDChannel = 11  ; 0xb
+        Type = CHTYPE_Z
+        DistanceToReference = 2
+        DistanceToReference2 = NAN
+        DisplayRange = "5000"
+        DefaultSiteName = "ESOB"
+        DefaultSiteText = "body"
+        Color = "44, 166, 40"
+        ProtocolColor = "44, 166, 40"
+        Flags = 7  ; 0x7
+        CalibrationDate = "2020-02-03"
+        CalibrationTime = "17:24:05"
+        CalibrationMeasuredOffset = 0  ; 0
+        CalibrationDeltaMeasured = 2048  ; 0x800
+        CalibrationPhysicalOffset = 0
+        CalibrationDeltaPhysical = 5001
+        CalibrationUnits = "       Z"
+    End Channel   ; 4
+    Begin Channel   ; 5
+        AToDChannel = 12  ; 0xc
+        Type = CHTYPE_Z
+        DistanceToReference = 0
+        DistanceToReference2 = NAN
+        DisplayRange = "5000"
+        DefaultSiteName = "ESOB"
+        DefaultSiteText = "body"
+        Color = "255, 0, 255"
+        ProtocolColor = "255, 0, 255"
+        Flags = 7  ; 0x7
+        CalibrationDate = "2020-02-03"
+        CalibrationTime = "17:24:05"
+        CalibrationMeasuredOffset = 0  ; 0
+        CalibrationDeltaMeasured = 2048  ; 0x800
+        CalibrationPhysicalOffset = 0
+        CalibrationDeltaPhysical = 5001
+        CalibrationUnits = "       Z"
+    End Channel   ; 5
+    Begin Channel   ; 6
+        AToDChannel = 13  ; 0xd
+        Type = CHTYPE_Z
+        DistanceToReference = -2
+        DistanceToReference2 = NAN
+        DisplayRange = "5000"
+        DefaultSiteName = "ESOB"
+        DefaultSiteText = "body"
+        Color = "0, 163, 198"
+        ProtocolColor = "0, 163, 198"
+        Flags = 7  ; 0x7
+        CalibrationDate = "2020-02-03"
+        CalibrationTime = "17:24:05"
+        CalibrationMeasuredOffset = 0  ; 0
+        CalibrationDeltaMeasured = 2048  ; 0x800
+        CalibrationPhysicalOffset = 0
+        CalibrationDeltaPhysical = 5001
+        CalibrationUnits = "       Z"
+    End Channel   ; 6
+    Begin Channel   ; 7
+        AToDChannel = 14  ; 0xe
+        Type = CHTYPE_PH
+        DistanceToReference = 0
+        DistanceToReference2 = NAN
+        DisplayRange = "8"
+        DefaultSiteName = "ESOB"
+        DefaultSiteText = "body"
+        Color = "255, 0, 0"
+        ProtocolColor = "255, 0, 0"
+        Flags = 7  ; 0x7
+        CalibrationDate = "2020-02-03"
+        CalibrationTime = "17:24:06"
+        CalibrationMeasuredOffset = 1094  ; 0x446
+        CalibrationDeltaMeasured = 739  ; 0x2e3
+        CalibrationPhysicalOffset = 3.6
+        TempCompOffset = -0.4
+        CalibrationDeltaPhysical = 3
+        CalibrationUnits = " pH4,pH7"
+    End Channel   ; 7
+    Begin Channel   ; 8
+        AToDChannel = 15  ; 0xf
+        Type = CHTYPE_PH
+        DistanceToReference = -15
+        DistanceToReference2 = NAN
+        DisplayRange = "8"
+        DefaultSiteName = "GAST"
+        DefaultSiteText = "gastric"
+        Color = "255, 128, 0"
+        ProtocolColor = "255, 128, 0"
+        Flags = 7  ; 0x7
+        CalibrationDate = "2020-02-03"
+        CalibrationTime = "17:24:06"
+        CalibrationMeasuredOffset = 1096  ; 0x448
+        CalibrationDeltaMeasured = 719  ; 0x2cf
+        CalibrationPhysicalOffset = 3.6
+        TempCompOffset = -0.4
+        CalibrationDeltaPhysical = 3
+        CalibrationUnits = " pH4,pH7"
+    End Channel   ; 8
+    Begin Study   ; 1
+        Name = "Reflux"
+        StudyType = "ZpHReflux"
+        Begin StudySpecialZESOB   ; 1
+            BaseStudyType = "ZpHReflux"
+            ZProxMigrationChannel = 2  ; 0x2
+            ZClearanceChannel = 5  ; 0x5
+            DistChannel = 6  ; 0x6
+            pHClearanceChannel = 7  ; 0x7
+        End StudySpecialZESOB   ; 1
+    End Study
+    Begin Study   ; 2
+        Name = "MII Swallow"
+        StudyType = "ZSWALLOW"
+        Begin StudySpecialZESOB   ; 2
+            BaseStudyType = "ZSWALLOW"
+            TotalProxChannel = 1  ; 0x1
+            DistChannel = 5  ; 0x5
+        End StudySpecialZESOB   ; 2
+    End Study
+    Begin Event   ; 1
+        Type = "$ESymptom1"
+        Text = "Symptom-1"
+        Caption = "Symptom1"
+        StripChartFileIndex = 3824  ; 0xef0
+        NumberOfSamples = 0  ; 0
+        Time = "17:53:17"
+        Date = "2020-02-03"
+        Flags = 0  ; 0
+    End Event   ; 1
+    Begin Event   ; 2
+        Type = "$EMealStart"
+        Text = "Meal Start"
+        Caption = "MealStart"
+        StripChartFileIndex = 87056  ; 0x15410
+        NumberOfSamples = 0  ; 0
+        Time = "17:55:01"
+        Date = "2020-02-03"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 1  ; 0x1
+        EndEvent = "$EMealEnd"
+        MergeIntoEvent = "$EMeal"
+    End Event   ; 2
+    Begin Event   ; 3
+        Type = "$EMealEnd"
+        Text = "Meal End"
+        Caption = "MealEnd"
+        StripChartFileIndex = 89248  ; 0x15ca0
+        NumberOfSamples = 0  ; 0
+        Time = "17:55:04"
+        Date = "2020-02-03"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 2  ; 0x2
+    End Event   ; 3
+    Begin Event   ; 4
+        Type = "$ESupineStart"
+        Text = "RecumbStart"
+        Caption = "RecumbentStart"
+        StripChartFileIndex = 99072  ; 0x18300
+        NumberOfSamples = 0  ; 0
+        Time = "17:55:16"
+        Date = "2020-02-03"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 1  ; 0x1
+        EndEvent = "$ESupineEnd"
+        MergeIntoEvent = "$ESupine"
+    End Event   ; 4
+    Begin Event   ; 5
+        Type = "$ESupineEnd"
+        Text = "RecumbEnd"
+        Caption = "RecumbentEnd"
+        StripChartFileIndex = 100720  ; 0x18970
+        NumberOfSamples = 0  ; 0
+        Time = "17:55:18"
+        Date = "2020-02-03"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 2  ; 0x2
+    End Event   ; 5
+    Begin Event   ; 6
+        Type = "$ESymptom1"
+        Text = "Symptom-1"
+        Caption = "Symptom1"
+        StripChartFileIndex = 2405024  ; 0x24b2a0
+        NumberOfSamples = 0  ; 0
+        Time = "18:43:18"
+        Date = "2020-02-03"
+        Flags = 0  ; 0
+    End Event   ; 6
+    Begin Event   ; 7
+        Type = "Symptom-2"
+        Text = "Symptom-2"
+        Caption = "Symptom-2"
+        StripChartFileIndex = 2622352  ; 0x280390
+        NumberOfSamples = 0  ; 0
+        Time = "18:47:50"
+        Date = "2020-02-03"
+        Flags = 0  ; 0
+    End Event   ; 7
+    Begin Event   ; 8
+        Type = "$ESymptom1"
+        Text = "Symptom-1"
+        Caption = "Symptom1"
+        StripChartFileIndex = 3027696  ; 0x2e32f0
+        NumberOfSamples = 0  ; 0
+        Time = "18:56:16"
+        Date = "2020-02-03"
+        Flags = 0  ; 0
+    End Event   ; 8
+    Begin Event   ; 9
+        Type = "$ESymptom1"
+        Text = "Symptom-1"
+        Caption = "Symptom1"
+        StripChartFileIndex = 3033584  ; 0x2e49f0
+        NumberOfSamples = 0  ; 0
+        Time = "18:56:24"
+        Date = "2020-02-03"
+        Flags = 0  ; 0
+    End Event   ; 9
+    Begin Event   ; 10
+        Type = "$ESymptom1"
+        Text = "Symptom-1"
+        Caption = "Symptom1"
+        StripChartFileIndex = 4260528  ; 0x4102b0
+        NumberOfSamples = 0  ; 0
+        Time = "19:21:57"
+        Date = "2020-02-03"
+        Flags = 0  ; 0
+    End Event   ; 10
+    Begin Event   ; 11
+        Type = "$EMealStart"
+        Text = "Meal Start"
+        Caption = "MealStart"
+        StripChartFileIndex = 4323904  ; 0x41fa40
+        NumberOfSamples = 0  ; 0
+        Time = "19:23:17"
+        Date = "2020-02-03"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 1  ; 0x1
+        EndEvent = "$EMealEnd"
+        MergeIntoEvent = "$EMeal"
+    End Event   ; 11
+    Begin Event   ; 12
+        Type = "$ESymptom1"
+        Text = "Symptom-1"
+        Caption = "Symptom1"
+        StripChartFileIndex = 5433008  ; 0x52e6b0
+        NumberOfSamples = 0  ; 0
+        Time = "19:46:23"
+        Date = "2020-02-03"
+        Flags = 0  ; 0
+    End Event   ; 12
+    Begin Event   ; 13
+        Type = "$EMealStart"
+        Text = "Meal Start"
+        Caption = "MealStart"
+        StripChartFileIndex = 5435360  ; 0x52efe0
+        NumberOfSamples = 0  ; 0
+        Time = "19:46:26"
+        Date = "2020-02-03"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 1  ; 0x1
+        EndEvent = "$EMealEnd"
+        MergeIntoEvent = "$EMeal"
+    End Event   ; 13
+    Begin Event   ; 14
+        Type = "$EMealEnd"
+        Text = "Meal End"
+        Caption = "MealEnd"
+        StripChartFileIndex = 6601568  ; 0x64bb60
+        NumberOfSamples = 0  ; 0
+        Time = "20:10:44"
+        Date = "2020-02-03"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 2  ; 0x2
+    End Event   ; 14
+    Begin Event   ; 15
+        Type = "$ESymptom1"
+        Text = "Symptom-1"
+        Caption = "Symptom1"
+        StripChartFileIndex = 9281520  ; 0x8d9ff0
+        NumberOfSamples = 0  ; 0
+        Time = "21:06:33"
+        Date = "2020-02-03"
+        Flags = 0  ; 0
+    End Event   ; 15
+    Begin Event   ; 16
+        Type = "Symptom-3"
+        Text = "Symptom-3"
+        Caption = "Symptom-3"
+        StripChartFileIndex = 10498496  ; 0xa031c0
+        NumberOfSamples = 0  ; 0
+        Time = "21:31:55"
+        Date = "2020-02-03"
+        Flags = 0  ; 0
+    End Event   ; 16
+    Begin Event   ; 17
+        Type = "$ESymptom1"
+        Text = "Symptom-1"
+        Caption = "Symptom1"
+        StripChartFileIndex = 11849792  ; 0xb4d040
+        NumberOfSamples = 0  ; 0
+        Time = "22:00:04"
+        Date = "2020-02-03"
+        Flags = 0  ; 0
+    End Event   ; 17
+    Begin Event   ; 18
+        Type = "Symptom-2"
+        Text = "Symptom-2"
+        Caption = "Symptom-2"
+        StripChartFileIndex = 11851808  ; 0xb4d820
+        NumberOfSamples = 0  ; 0
+        Time = "22:00:06"
+        Date = "2020-02-03"
+        Flags = 0  ; 0
+    End Event   ; 18
+    Begin Event   ; 19
+        Type = "$ESymptom1"
+        Text = "Symptom-1"
+        Caption = "Symptom1"
+        StripChartFileIndex = 12218816  ; 0xba71c0
+        NumberOfSamples = 0  ; 0
+        Time = "22:07:45"
+        Date = "2020-02-03"
+        Flags = 0  ; 0
+    End Event   ; 19
+    Begin Event   ; 20
+        Type = "Symptom-2"
+        Text = "Symptom-2"
+        Caption = "Symptom-2"
+        StripChartFileIndex = 12453104  ; 0xbe04f0
+        NumberOfSamples = 0  ; 0
+        Time = "22:12:38"
+        Date = "2020-02-03"
+        Flags = 0  ; 0
+    End Event   ; 20
+    Begin Event   ; 21
+        Type = "$ESymptom1"
+        Text = "Symptom-1"
+        Caption = "Symptom1"
+        StripChartFileIndex = 12648720  ; 0xc10110
+        NumberOfSamples = 0  ; 0
+        Time = "22:16:42"
+        Date = "2020-02-03"
+        Flags = 0  ; 0
+    End Event   ; 21
+    Begin Event   ; 22
+        Type = "$EMealStart"
+        Text = "Meal Start"
+        Caption = "MealStart"
+        StripChartFileIndex = 12756208  ; 0xc2a4f0
+        NumberOfSamples = 0  ; 0
+        Time = "22:18:57"
+        Date = "2020-02-03"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 1  ; 0x1
+        EndEvent = "$EMealEnd"
+        MergeIntoEvent = "$EMeal"
+    End Event   ; 22
+    Begin Event   ; 23
+        Type = "$ESupineStart"
+        Text = "RecumbStart"
+        Caption = "RecumbentStart"
+        StripChartFileIndex = 15399040  ; 0xeaf880
+        NumberOfSamples = 0  ; 0
+        Time = "23:14:00"
+        Date = "2020-02-03"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 1  ; 0x1
+        EndEvent = "$ESupineEnd"
+        MergeIntoEvent = "$ESupine"
+    End Event   ; 23
+    Begin Event   ; 24
+        Type = "$EMealStart"
+        Text = "Meal Start"
+        Caption = "MealStart"
+        StripChartFileIndex = 15402448  ; 0xeb05d0
+        NumberOfSamples = 0  ; 0
+        Time = "23:14:04"
+        Date = "2020-02-03"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 1  ; 0x1
+        EndEvent = "$EMealEnd"
+        MergeIntoEvent = "$EMeal"
+    End Event   ; 24
+    Begin Event   ; 25
+        Type = "$EMealEnd"
+        Text = "Meal End"
+        Caption = "MealEnd"
+        StripChartFileIndex = 15405536  ; 0xeb11e0
+        NumberOfSamples = 0  ; 0
+        Time = "23:14:08"
+        Date = "2020-02-03"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 2  ; 0x2
+    End Event   ; 25
+    Begin Event   ; 26
+        Type = "$ESymptom1"
+        Text = "Symptom-1"
+        Caption = "Symptom1"
+        StripChartFileIndex = 16744128  ; 0xff7ec0
+        NumberOfSamples = 0  ; 0
+        Time = "23:42:01"
+        Date = "2020-02-03"
+        Flags = 0  ; 0
+    End Event   ; 26
+    Begin Event   ; 27
+        Type = "Symptom-2"
+        Text = "Symptom-2"
+        Caption = "Symptom-2"
+        StripChartFileIndex = 16748480  ; 0xff8fc0
+        NumberOfSamples = 0  ; 0
+        Time = "23:42:07"
+        Date = "2020-02-03"
+        Flags = 0  ; 0
+    End Event   ; 27
+    Begin Event   ; 28
+        Type = "$ESymptom1"
+        Text = "Symptom-1"
+        Caption = "Symptom1"
+        StripChartFileIndex = 28779712  ; 0x1b724c0
+        NumberOfSamples = 0  ; 0
+        Time = "03:52:45"
+        Date = "2020-02-04"
+        Flags = 0  ; 0
+    End Event   ; 28
+    Begin Event   ; 29
+        Type = "$ESymptom1"
+        Text = "Symptom-1"
+        Caption = "Symptom1"
+        StripChartFileIndex = 28782240  ; 0x1b72ea0
+        NumberOfSamples = 0  ; 0
+        Time = "03:52:49"
+        Date = "2020-02-04"
+        Flags = 0  ; 0
+    End Event   ; 29
+    Begin Event   ; 30
+        Type = "Symptom-3"
+        Text = "Symptom-3"
+        Caption = "Symptom-3"
+        StripChartFileIndex = 28795728  ; 0x1b76350
+        NumberOfSamples = 0  ; 0
+        Time = "03:53:05"
+        Date = "2020-02-04"
+        Flags = 0  ; 0
+    End Event   ; 30
+    Begin Event   ; 31
+        Type = "$ESupineEnd"
+        Text = "RecumbEnd"
+        Caption = "RecumbentEnd"
+        StripChartFileIndex = 34940864  ; 0x21527c0
+        NumberOfSamples = 0  ; 0
+        Time = "06:01:07"
+        Date = "2020-02-04"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 2  ; 0x2
+    End Event   ; 31
+    Begin Event   ; 32
+        Type = "$EMealStart"
+        Text = "Meal Start"
+        Caption = "MealStart"
+        StripChartFileIndex = 34943712  ; 0x21532e0
+        NumberOfSamples = 0  ; 0
+        Time = "06:01:10"
+        Date = "2020-02-04"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 1  ; 0x1
+        EndEvent = "$EMealEnd"
+        MergeIntoEvent = "$EMeal"
+    End Event   ; 32
+    Begin Event   ; 33
+        Type = "$EMealEnd"
+        Text = "Meal End"
+        Caption = "MealEnd"
+        StripChartFileIndex = 34985088  ; 0x215d480
+        NumberOfSamples = 0  ; 0
+        Time = "06:02:02"
+        Date = "2020-02-04"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 2  ; 0x2
+    End Event   ; 33
+    Begin Event   ; 34
+        Type = "$EDiary"
+        Text = "Diary"
+        Caption = "Diary"
+        StripChartFileIndex = 35001632  ; 0x2161520
+        NumberOfSamples = 0  ; 0
+        Time = "06:02:23"
+        Date = "2020-02-04"
+        Flags = 0  ; 0
+    End Event   ; 34
+    Begin Event   ; 35
+        Type = "$EDiary"
+        Text = "Diary"
+        Caption = "Diary"
+        StripChartFileIndex = 35002800  ; 0x21619b0
+        NumberOfSamples = 0  ; 0
+        Time = "06:02:24"
+        Date = "2020-02-04"
+        Flags = 0  ; 0
+    End Event   ; 35
+    Begin Event   ; 36
+        Type = "$EMealEnd"
+        Text = "Meal End"
+        Caption = "MealEnd"
+        StripChartFileIndex = 35012400  ; 0x2163f30
+        NumberOfSamples = 0  ; 0
+        Time = "06:02:36"
+        Date = "2020-02-04"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 2  ; 0x2
+    End Event   ; 36
+    Begin Event   ; 37
+        Type = "$ESupineStart"
+        Text = "RecumbStart"
+        Caption = "RecumbentStart"
+        StripChartFileIndex = 35015968  ; 0x2164d20
+        NumberOfSamples = 0  ; 0
+        Time = "06:02:40"
+        Date = "2020-02-04"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 1  ; 0x1
+        EndEvent = "$ESupineEnd"
+        MergeIntoEvent = "$ESupine"
+    End Event   ; 37
+    Begin Event   ; 38
+        Type = "Symptom-3"
+        Text = "Symptom-3"
+        Caption = "Symptom-3"
+        StripChartFileIndex = 38513392  ; 0x24baaf0
+        NumberOfSamples = 0  ; 0
+        Time = "07:15:32"
+        Date = "2020-02-04"
+        Flags = 0  ; 0
+    End Event   ; 38
+    Begin Event   ; 39
+        Type = "$ESupineEnd"
+        Text = "RecumbEnd"
+        Caption = "RecumbentEnd"
+        StripChartFileIndex = 40587920  ; 0x26b5290
+        NumberOfSamples = 0  ; 0
+        Time = "07:58:45"
+        Date = "2020-02-04"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 2  ; 0x2
+    End Event   ; 39
+    Begin Event   ; 40
+        Type = "$EMealStart"
+        Text = "Meal Start"
+        Caption = "MealStart"
+        StripChartFileIndex = 41560608  ; 0x27a2a20
+        NumberOfSamples = 0  ; 0
+        Time = "08:19:01"
+        Date = "2020-02-04"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 1  ; 0x1
+        EndEvent = "$EMealEnd"
+        MergeIntoEvent = "$EMeal"
+    End Event   ; 40
+    Begin Event   ; 41
+        Type = "$EMealEnd"
+        Text = "Meal End"
+        Caption = "MealEnd"
+        StripChartFileIndex = 42151968  ; 0x2833020
+        NumberOfSamples = 0  ; 0
+        Time = "08:31:20"
+        Date = "2020-02-04"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 2  ; 0x2
+    End Event   ; 41
+    Begin Event   ; 42
+        Type = "$EMealStart"
+        Text = "Meal Start"
+        Caption = "MealStart"
+        StripChartFileIndex = 44163552  ; 0x2a1e1e0
+        NumberOfSamples = 0  ; 0
+        Time = "09:13:15"
+        Date = "2020-02-04"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 1  ; 0x1
+        EndEvent = "$EMealEnd"
+        MergeIntoEvent = "$EMeal"
+    End Event   ; 42
+    Begin Event   ; 43
+        Type = "$EMealEnd"
+        Text = "Meal End"
+        Caption = "MealEnd"
+        StripChartFileIndex = 46047104  ; 0x2be9f80
+        NumberOfSamples = 0  ; 0
+        Time = "09:52:29"
+        Date = "2020-02-04"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 2  ; 0x2
+    End Event   ; 43
+    Begin Event   ; 44
+        Type = "Symptom-3"
+        Text = "Symptom-3"
+        Caption = "Symptom-3"
+        StripChartFileIndex = 48137312  ; 0x2de8460
+        NumberOfSamples = 0  ; 0
+        Time = "10:36:02"
+        Date = "2020-02-04"
+        Flags = 0  ; 0
+    End Event   ; 44
+    Begin Event   ; 45
+        Type = "Symptom-3"
+        Text = "Symptom-3"
+        Caption = "Symptom-3"
+        StripChartFileIndex = 48377280  ; 0x2e22dc0
+        NumberOfSamples = 0  ; 0
+        Time = "10:41:01"
+        Date = "2020-02-04"
+        Flags = 0  ; 0
+    End Event   ; 45
+    Begin Event   ; 46
+        Type = "$ESymptom1"
+        Text = "Symptom-1"
+        Caption = "Symptom1"
+        StripChartFileIndex = 48379824  ; 0x2e237b0
+        NumberOfSamples = 0  ; 0
+        Time = "10:41:05"
+        Date = "2020-02-04"
+        Flags = 0  ; 0
+    End Event   ; 46
+    Begin Event   ; 47
+        Type = "$ESymptom1"
+        Text = "Symptom-1"
+        Caption = "Symptom1"
+        StripChartFileIndex = 48552704  ; 0x2e4db00
+        NumberOfSamples = 0  ; 0
+        Time = "10:44:41"
+        Date = "2020-02-04"
+        Flags = 0  ; 0
+    End Event   ; 47
+    Begin Event   ; 48
+        Type = "$ESymptom1"
+        Text = "Symptom-1"
+        Caption = "Symptom1"
+        StripChartFileIndex = 48826128  ; 0x2e90710
+        NumberOfSamples = 0  ; 0
+        Time = "10:50:23"
+        Date = "2020-02-04"
+        Flags = 0  ; 0
+    End Event   ; 48
+    Begin Event   ; 49
+        Type = "Symptom-2"
+        Text = "Symptom-2"
+        Caption = "Symptom-2"
+        StripChartFileIndex = 48998272  ; 0x2eba780
+        NumberOfSamples = 0  ; 0
+        Time = "10:53:58"
+        Date = "2020-02-04"
+        Flags = 0  ; 0
+    End Event   ; 49
+    Begin Event   ; 50
+        Type = "Symptom-3"
+        Text = "Symptom-3"
+        Caption = "Symptom-3"
+        StripChartFileIndex = 49247056  ; 0x2ef7350
+        NumberOfSamples = 0  ; 0
+        Time = "10:59:09"
+        Date = "2020-02-04"
+        Flags = 0  ; 0
+    End Event   ; 50
+    Begin Event   ; 51
+        Type = "$ESymptom1"
+        Text = "Symptom-1"
+        Caption = "Symptom1"
+        StripChartFileIndex = 49303008  ; 0x2f04de0
+        NumberOfSamples = 0  ; 0
+        Time = "11:00:19"
+        Date = "2020-02-04"
+        Flags = 0  ; 0
+    End Event   ; 51
+    Begin Event   ; 52
+        Type = "$ESymptom1"
+        Text = "Symptom-1"
+        Caption = "Symptom1"
+        StripChartFileIndex = 49496176  ; 0x2f34070
+        NumberOfSamples = 0  ; 0
+        Time = "11:04:20"
+        Date = "2020-02-04"
+        Flags = 0  ; 0
+    End Event   ; 52
+    Begin Event   ; 53
+        Type = "$EMealStart"
+        Text = "Meal Start"
+        Caption = "MealStart"
+        StripChartFileIndex = 50017456  ; 0x2fb34b0
+        NumberOfSamples = 0  ; 0
+        Time = "11:15:12"
+        Date = "2020-02-04"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 1  ; 0x1
+        EndEvent = "$EMealEnd"
+        MergeIntoEvent = "$EMeal"
+    End Event   ; 53
+    Begin Event   ; 54
+        Type = "$ESymptom1"
+        Text = "Symptom-1"
+        Caption = "Symptom1"
+        StripChartFileIndex = 50018384  ; 0x2fb3850
+        NumberOfSamples = 0  ; 0
+        Time = "11:15:13"
+        Date = "2020-02-04"
+        Flags = 0  ; 0
+    End Event   ; 54
+    Begin Event   ; 55
+        Type = "$ESymptom1"
+        Text = "Symptom-1"
+        Caption = "Symptom1"
+        StripChartFileIndex = 50958384  ; 0x3099030
+        NumberOfSamples = 0  ; 0
+        Time = "11:34:48"
+        Date = "2020-02-04"
+        Flags = 0  ; 0
+    End Event   ; 55
+    Begin Event   ; 56
+        Type = "$EMealEnd"
+        Text = "Meal End"
+        Caption = "MealEnd"
+        StripChartFileIndex = 50971472  ; 0x309c350
+        NumberOfSamples = 0  ; 0
+        Time = "11:35:04"
+        Date = "2020-02-04"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 2  ; 0x2
+    End Event   ; 56
+    Begin Event   ; 57
+        Type = "Symptom-3"
+        Text = "Symptom-3"
+        Caption = "Symptom-3"
+        StripChartFileIndex = 51168096  ; 0x30cc360
+        NumberOfSamples = 0  ; 0
+        Time = "11:39:10"
+        Date = "2020-02-04"
+        Flags = 0  ; 0
+    End Event   ; 57
+    Begin Event   ; 58
+        Type = "$ESymptom1"
+        Text = "Symptom-1"
+        Caption = "Symptom1"
+        StripChartFileIndex = 51171200  ; 0x30ccf80
+        NumberOfSamples = 0  ; 0
+        Time = "11:39:14"
+        Date = "2020-02-04"
+        Flags = 0  ; 0
+    End Event   ; 58
+    Begin Event   ; 59
+        Type = "$ESymptom1"
+        Text = "Symptom-1"
+        Caption = "Symptom1"
+        StripChartFileIndex = 52914800  ; 0x3276a70
+        NumberOfSamples = 0  ; 0
+        Time = "12:15:33"
+        Date = "2020-02-04"
+        Flags = 0  ; 0
+    End Event   ; 59
+    Begin Event   ; 60
+        Type = "$EMealStart"
+        Text = "Meal Start"
+        Caption = "MealStart"
+        StripChartFileIndex = 56647504  ; 0x3605f50
+        NumberOfSamples = 0  ; 0
+        Time = "13:33:19"
+        Date = "2020-02-04"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 1  ; 0x1
+        EndEvent = "$EMealEnd"
+        MergeIntoEvent = "$EMeal"
+    End Event   ; 60
+    Begin Event   ; 61
+        Type = "$ESymptom1"
+        Text = "Symptom-1"
+        Caption = "Symptom1"
+        StripChartFileIndex = 56650576  ; 0x3606b50
+        NumberOfSamples = 0  ; 0
+        Time = "13:33:23"
+        Date = "2020-02-04"
+        Flags = 0  ; 0
+    End Event   ; 61
+    Begin Event   ; 62
+        Type = "Symptom-2"
+        Text = "Symptom-2"
+        Caption = "Symptom-2"
+        StripChartFileIndex = 57333936  ; 0x36ad8b0
+        NumberOfSamples = 0  ; 0
+        Time = "13:47:37"
+        Date = "2020-02-04"
+        Flags = 0  ; 0
+    End Event   ; 62
+    Begin Event   ; 63
+        Type = "$EMealEnd"
+        Text = "Meal End"
+        Caption = "MealEnd"
+        StripChartFileIndex = 58645280  ; 0x37edb20
+        NumberOfSamples = 0  ; 0
+        Time = "14:14:56"
+        Date = "2020-02-04"
+        Flags = 0  ; 0
+        InternalOnly = 1  ; 0x1
+        MergeEventFlag = 2  ; 0x2
+    End Event   ; 63
+    Begin Event   ; 64
+        Type = "$ESymptom1"
+        Text = "Symptom-1"
+        Caption = "Symptom1"
+        StripChartFileIndex = 60910272  ; 0x3a16ac0
+        NumberOfSamples = 0  ; 0
+        Time = "15:02:07"
+        Date = "2020-02-04"
+        Flags = 0  ; 0
+    End Event   ; 64
+    Begin Recording
+        StartingStripChartFileIndex = 0  ; 0
+        StartingTime = "17:53:12"
+        StartingDate = "2020-02-03"
+        EndingStripChartFileIndex = 60920832  ; 0x3a19400
+        EndingTime = "15:02:23"
+        EndingDate = "2020-02-04"
+    End Recording
+End Procedure

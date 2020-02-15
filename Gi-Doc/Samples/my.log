@@ -1,0 +1,4 @@
+Feb 05, 2017 7:59:12 PM ir.org.acm.session23.TestLogger main
+WARNING: This is a warning
+Feb 05, 2017 7:59:12 PM ir.org.acm.session23.TestLogger main
+SEVERE: Very important log!
