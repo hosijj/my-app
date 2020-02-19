@@ -12,53 +12,64 @@ import java.util.List;
 public class ReadFile {
     public static void main(String[] args) throws InvalidFormatException, IOException {
         System.out.println("Crawling started ... ");
-        try {
-            XWPFDocument doc = new XWPFDocument(OPCPackage.open("HRM.docx"));
-            XWPFDocument doc2 = new XWPFDocument(OPCPackage.open("Template.docm"));
+        String patientName;
+        String gender;
 
-          /*  for (XWPFParagraph p : doc.getParagraphs()) {
-//                System.out.println(p.getText());
-                List<XWPFRun> runs = p.getRuns();
-                if (runs != null) {
-                    for (XWPFRun r : runs) {
-                        String text = r.getText(0);
-                        if (text != null && text.contains("Patient:")) {
-//                            text = text.replace("jafari", "haystack");
-                            System.out.println("yy");
-//                            r.setText(text, 0);
-                        }
-                    }
-                }
-            }*/
+        try {
+            XWPFDocument hrmDoc = new XWPFDocument(OPCPackage.open("HRM.docx"));
+            XWPFDocument templateDoc = new XWPFDocument(OPCPackage.open("Template.docm"));
 
             /////////////////////////// for tables Start
+//            System.out.println("Procedure date ===== >  " + templateDoc.getParagraphs().get(8).getText());
+//            System.out.println(" Procedure ===== >  " + templateDoc.getParagraphs().get(9).getText());
+//            System.out.println(" Indications ===== >  " + templateDoc.getParagraphs().get(10).getText());
+//            System.out.println(" Dear Dr ===== >  " + templateDoc.getParagraphs().get(12).getText());
 
 
-//            XWPFParagraph p = doc2.getTables().get(1).getRow(0).getCell(0).getParagraphs().get(1);
-//            List<XWPFRun> r = p.getRuns();
-//            System.out.println("patient name   = " + doc.getTables().get(0).getRow(0).getCell(0).getParagraphs().get(1).getText());
-//            System.out.println("patient gender   = " + doc.getTables().get(0).getRow(0).getCell(2).getText());
+            XWPFParagraph p = templateDoc.getTables().get(1).getRow(0).getCell(0).getParagraphs().get(1);
+            List<XWPFRun> r = p.getRuns();
+
+            String text = templateDoc.getTables().get(1).getRow(0).getCell(0).getParagraphs().get(1).getText();
+//            String genderParagraph =  templateDoc.getParagraphs().get(14).getText();
+            String genderParagraph =  templateDoc.getParagraphs().get(14).getRuns().get(1).getText(0);
+
+
+            patientName = hrmDoc.getTables().get(0).getRow(0).getCell(0).getParagraphs().get(1).getText();
+            gender = hrmDoc.getTables().get(0).getRow(0).getCell(2).getText();
+
+//            System.out.println("ppppppp   = " + hrmDoc.getTables().get(0).getRow(0).getCell(2).getText());
 //            System.out.println("patient 22222    = " + doc2.getTables().get(1).getRow(0).getCell(0).getParagraphs().get(1).getText());
 
 
-//            String text = doc2.getTables().get(1).getRow(0).getCell(0).getParagraphs().get(1).getText();
-//            System.out.println(text);
-           /* if (text != null && text.contains("PName")) {
-                System.out.println("HEre");
-                text = text.replace("PName", "haystack");
+//             *************************      patient name    **********************************
+            if (text != null && text.contains("patientname")) {
+                text = text.replaceAll("patientname", patientName);
                 r.get(0).setText(text, 0);
-                System.out.println("Done!");
-            }*/
+                text = text.replaceAll("patientname", patientName);
+                r.get(0).setText(text, 0);
+            }
+//                       *************************      gender    **********************************
+            if (genderParagraph.contains("gender")) {
+                if (gender.equals("Male")){
+                    System.out.println("gentleman");
+                    genderParagraph = genderParagraph.replace("gender", "gentleman");
+                }
+                if (gender.equals("female")){
+                    System.out.println("lady");
+                    genderParagraph = genderParagraph.replace("gender", "lady");
+                }
+                templateDoc.getParagraphs().get(14).getRuns().get(1).setText(genderParagraph, 0);
+            }
 
 
-//            doc2.write(new FileOutputStream("Template2.docm"));
+            templateDoc.write(new FileOutputStream("Template2.docm"));
 
 
             /////////////////////////// for tables Start End
 
             /////////////////////  for images Start
 
-            System.out.println("getting pictures .................... ");
+           /* System.out.println("getting pictures .................... ");
             List<XWPFPictureData> piclist = doc.getAllPictures();
             Iterator<XWPFPictureData> iterator = piclist.iterator();
 
@@ -78,7 +89,7 @@ public class ReadFile {
             }
             System.out.println("=== " + i);
             /////////////////////  for images End
-
+*/
         } catch (Exception ex) {
             ex.printStackTrace();
         }
