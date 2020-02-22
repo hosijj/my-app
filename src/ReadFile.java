@@ -32,6 +32,23 @@ public class ReadFile {
         String relaxationTimeToNadir;
         String relaxationDuration;
 
+        String numberOfSwallows;
+        String peristaltic;
+        String simultaneous;
+        String failed;
+        String meanWaveAmplitude;
+        String meanWaveDuration;
+        String doublePeakedWaves;
+        String triplePeakedWaves;
+        String velocity;
+        String distalContracliteIntegralMean;
+        String distalContracliteIntegralHighest;
+        String contractileFrontVelocity;
+        String intrabolusPressureLesr;
+        String intrabolusPressureAvgMax;
+        String distalLatency;
+        String smallBreaks;
+
         try {
             XWPFDocument hrmDoc = new XWPFDocument(OPCPackage.open("HRM.docx"));
             XWPFDocument templateDoc = new XWPFDocument(OPCPackage.open("Template.docm"));
@@ -52,6 +69,7 @@ public class ReadFile {
 
             patientName = hrmDoc.getTables().get(0).getRow(0).getCell(0).getParagraphs().get(1).getText();
             gender = hrmDoc.getTables().get(0).getRow(0).getCell(2).getText();
+
             proximalLes = hrmDoc.getTables().get(2).getRow(2).getCell(1).getText();
              digitalLes = hrmDoc.getTables().get(2).getRow(3).getCell(1).getText();
              lesLength = hrmDoc.getTables().get(2).getRow(4).getCell(1).getText();
@@ -70,7 +88,25 @@ public class ReadFile {
              relaxationTimeToNadir = hrmDoc.getTables().get(2).getRow(31).getCell(1).getText();
              relaxationDuration = hrmDoc.getTables().get(2).getRow(32).getCell(1).getText();
 
-            System.out.println("eeee   = " + templateDoc.getTables().get(2).getRow(2).getCell(1).getText());
+             //  ********************************  secondColumn
+             numberOfSwallows = hrmDoc.getTables().get(2).getRow(1).getCell(4).getText();
+             peristaltic = hrmDoc.getTables().get(2).getRow(3).getCell(4).getText();
+             simultaneous = hrmDoc.getTables().get(2).getRow(4).getCell(4).getText();
+             failed = hrmDoc.getTables().get(2).getRow(5).getCell(4).getText();
+             meanWaveAmplitude = hrmDoc.getTables().get(2).getRow(7).getCell(4).getText();
+             meanWaveDuration = hrmDoc.getTables().get(2).getRow(8).getCell(4).getText();
+             doublePeakedWaves = hrmDoc.getTables().get(2).getRow(9).getCell(4).getText();
+             triplePeakedWaves = hrmDoc.getTables().get(2).getRow(10).getCell(4).getText();
+             velocity = hrmDoc.getTables().get(2).getRow(11).getCell(4).getText();
+             distalContracliteIntegralMean = hrmDoc.getTables().get(2).getRow(13).getCell(4).getText();
+             distalContracliteIntegralHighest = hrmDoc.getTables().get(2).getRow(14).getCell(4).getText();
+             contractileFrontVelocity = hrmDoc.getTables().get(2).getRow(15).getCell(4).getText();
+             intrabolusPressureLesr = hrmDoc.getTables().get(2).getRow(16).getCell(4).getText();
+             intrabolusPressureAvgMax = hrmDoc.getTables().get(2).getRow(17).getCell(4).getText();
+             distalLatency = hrmDoc.getTables().get(2).getRow(19).getCell(4).getText();
+             smallBreaks = hrmDoc.getTables().get(2).getRow(25).getCell(4).getText();
+
+//            System.out.println("smallBreaks   = " + templateDoc.fon);
 //            System.out.println("patient 22222    = " + doc2.getTables().get(1).getRow(0).getCell(0).getParagraphs().get(1).getText());
 
 
@@ -95,6 +131,85 @@ public class ReadFile {
 
              templateDoc.getTables().get(2).getRow(2).getCell(1).removeParagraph(0);
              templateDoc.getTables().get(2).getRow(2).getCell(1).setText(proximalLes);
+
+            templateDoc.getTables().get(2).getRow(3).getCell(1).removeParagraph(0);
+            templateDoc.getTables().get(2).getRow(3).getCell(1).setText(lesLength);
+
+            templateDoc.getTables().get(2).getRow(4).getCell(1).removeParagraph(0);
+            templateDoc.getTables().get(2).getRow(4).getCell(1).setText(esophagealLength);
+
+            templateDoc.getTables().get(2).getRow(5).getCell(1).removeParagraph(0);
+            templateDoc.getTables().get(2).getRow(5).getCell(1).setText(intraabdominalLesLength);
+
+            templateDoc.getTables().get(2).getRow(6).getCell(1).removeParagraph(0);
+            templateDoc.getTables().get(2).getRow(6).getCell(1).setText(hiatalHernia);
+
+
+            templateDoc.getTables().get(2).getRow(9).getCell(1).removeParagraph(0);
+            templateDoc.getTables().get(2).getRow(9).getCell(1).setText(basalRespiratoryMin);
+
+
+            templateDoc.getTables().get(2).getRow(10).getCell(1).removeParagraph(0);
+            templateDoc.getTables().get(2).getRow(10).getCell(1).setText(basalRespiratoryMean);
+
+
+            templateDoc.getTables().get(2).getRow(11).getCell(1).removeParagraph(0);
+            templateDoc.getTables().get(2).getRow(11).getCell(1).setText(residualMean);
+
+
+            templateDoc.getTables().get(2).getRow(14).getCell(1).removeParagraph(0);
+            templateDoc.getTables().get(2).getRow(14).getCell(1).setText(meanBasalPressure);
+
+
+            templateDoc.getTables().get(2).getRow(15).getCell(1).removeParagraph(0);
+            templateDoc.getTables().get(2).getRow(15).getCell(1).setText(meanResidualPressure);
+
+            //  ****************************************** second column
+            templateDoc.getTables().get(2).getRow(1).getCell(4).removeParagraph(0);
+            templateDoc.getTables().get(2).getRow(1).getCell(4).setText(numberOfSwallows);
+
+            templateDoc.getTables().get(2).getRow(3).getCell(4).removeParagraph(0);
+            templateDoc.getTables().get(2).getRow(3).getCell(4).setText(peristaltic);
+
+            templateDoc.getTables().get(2).getRow(4).getCell(4).removeParagraph(0);
+            templateDoc.getTables().get(2).getRow(4).getCell(4).setText(simultaneous);
+
+            templateDoc.getTables().get(2).getRow(5).getCell(4).removeParagraph(0);
+            templateDoc.getTables().get(2).getRow(5).getCell(4).setText(failed);
+
+            templateDoc.getTables().get(2).getRow(7).getCell(4).removeParagraph(0);
+            templateDoc.getTables().get(2).getRow(7).getCell(4).setText(meanWaveAmplitude);
+
+            templateDoc.getTables().get(2).getRow(8).getCell(4).removeParagraph(0);
+            templateDoc.getTables().get(2).getRow(8).getCell(4).setText(meanWaveDuration);
+
+            templateDoc.getTables().get(2).getRow(9).getCell(4).removeParagraph(0);
+            templateDoc.getTables().get(2).getRow(9).getCell(4).setText(doublePeakedWaves);
+
+            templateDoc.getTables().get(2).getRow(10).getCell(4).removeParagraph(0);
+            templateDoc.getTables().get(2).getRow(10).getCell(4).setText(triplePeakedWaves);
+
+            templateDoc.getTables().get(2).getRow(11).getCell(4).removeParagraph(0);
+            templateDoc.getTables().get(2).getRow(11).getCell(4).setText(velocity);
+
+            templateDoc.getTables().get(2).getRow(13).getCell(4).removeParagraph(0);
+            templateDoc.getTables().get(2).getRow(13).getCell(4).setText(distalContracliteIntegralMean);
+
+            templateDoc.getTables().get(2).getRow(14).getCell(4).removeParagraph(0);
+            templateDoc.getTables().get(2).getRow(14).getCell(4).setText(contractileFrontVelocity);
+
+            templateDoc.getTables().get(2).getRow(15).getCell(4).removeParagraph(0);
+            templateDoc.getTables().get(2).getRow(15).getCell(4).setText(intrabolusPressureLesr);
+
+            templateDoc.getTables().get(2).getRow(16).getCell(4).removeParagraph(0);
+            templateDoc.getTables().get(2).getRow(16).getCell(4).setText(intrabolusPressureAvgMax);
+
+            templateDoc.getTables().get(2).getRow(18).getCell(4).removeParagraph(0);
+            templateDoc.getTables().get(2).getRow(18).getCell(4).setText(distalLatency);
+
+            templateDoc.getTables().get(2).getRow(19).getCell(4).removeParagraph(0);
+            templateDoc.getTables().get(2).getRow(19).getCell(4).setText(smallBreaks);
+
 
             templateDoc.write(new FileOutputStream("Template2.docm"));
 
