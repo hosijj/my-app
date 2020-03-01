@@ -2,15 +2,113 @@ import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.openxml4j.opc.OPCPackage;
 import org.apache.poi.xwpf.extractor.XWPFWordExtractor;
 import org.apache.poi.xwpf.usermodel.*;
+import org.apache.xmlbeans.impl.piccolo.io.FileFormatException;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.*;
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.StringTokenizer;
 
 public class ReadFile {
     public static void main(String[] args) throws InvalidFormatException, IOException {
+        //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//          readWordDocument() {
+            try {
+                String fileName = "template.docm";
+
+                if(!(fileName.endsWith(".doc") || fileName.endsWith(".docm"))) {
+                    throw new FileFormatException();
+                } else {
+
+                    XWPFDocument doc = new XWPFDocument(new FileInputStream(fileName));
+
+                    List<XWPFTable> table = doc.getTables();
+
+                    for (XWPFTable xwpfTable : table) {
+                        List<XWPFTableRow> row = xwpfTable.getRows();
+                        for (XWPFTableRow xwpfTableRow : row) {
+                            List<XWPFTableCell> cell = xwpfTableRow.getTableCells();
+                            for (XWPFTableCell xwpfTableCell : cell) {
+                                if(xwpfTableCell!=null)
+                                {
+                                    System.out.println(xwpfTableCell.getText());
+                                    List<XWPFTable> itable = xwpfTableCell.getTables();
+                                    if(itable.size()!=0)
+                                    {
+                                        for (XWPFTable xwpfiTable : itable) {
+                                            List<XWPFTableRow> irow = xwpfiTable.getRows();
+                                            for (XWPFTableRow xwpfiTableRow : irow) {
+                                                List<XWPFTableCell> icell = xwpfiTableRow.getTableCells();
+                                                for (XWPFTableCell xwpfiTableCell : icell) {
+                                                    if(xwpfiTableCell!=null)
+                                                    {
+                                                        System.out.println(xwpfiTableCell.getText());
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            } catch(FileFormatException e) {
+                e.printStackTrace();
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+       /* int count = 0;
+        XWPFDocument document = new XWPFDocument();
+        XWPFDocument docx = new XWPFDocument(new FileInputStream("template.docm"));
+        XWPFWordExtractor we = new XWPFWordExtractor(docx);
+        String text2 = we.getText() ;
+//        if(text2.contains("value1")){
+            text2 = text2.replace("value1", "sms");
+            System.out.println(text2);
+//        }
+        char[] c = text2.toCharArray();
+        for(int i= 0; i < c.length;i++){
+
+            if(c[i] == '\n'){
+                count ++;
+            }
+        }
+        System.out.println(c[0]);
+        StringTokenizer st = new StringTokenizer(text2,"\n");
+
+        XWPFParagraph para = document.createParagraph();
+        para.setAlignment(ParagraphAlignment.CENTER);
+        XWPFRun run = para.createRun();
+        run.setBold(true);
+        run.setFontSize(36);
+        run.setText("Apache POI works well!");
+
+        List<XWPFParagraph>paragraphs = new ArrayList<>();
+        List<XWPFRun>runs = new ArrayList<>();
+        int k = 0;
+        for(k=0;k<count+1;k++){
+            paragraphs.add(document.createParagraph());
+        }
+        k=0;
+        while(st.hasMoreElements()){
+            paragraphs.get(k).setAlignment(ParagraphAlignment.LEFT);
+            paragraphs.get(k).setSpacingAfter(0);
+            paragraphs.get(k).setSpacingBefore(0);
+            run = paragraphs.get(k).createRun();
+            run.setText(st.nextElement().toString());
+            k++;
+        }
+
+        document.write(new FileOutputStream("test2.docx"));*/
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        /*
         System.out.println("Crawling started ... ");
         String patientName;
         String gender;
@@ -65,7 +163,9 @@ public class ReadFile {
 
             String text = templateDoc.getTables().get(1).getRow(0).getCell(0).getParagraphs().get(1).getText();
             String genderParagraph =  templateDoc.getParagraphs().get(14).getRuns().get(1).getText(0);
-
+            String upperOseVl1 =  templateDoc.getParagraphs().get(17).getRuns().get(2).getText(0);
+            String upperOseVl2 =  templateDoc.getParagraphs().get(17).getRuns().get(6).getText(0);
+            System.out.println(" =====  >       " + templateDoc.getParagraphs().size());
 
             patientName = hrmDoc.getTables().get(0).getRow(0).getCell(0).getParagraphs().get(1).getText();
             gender = hrmDoc.getTables().get(0).getRow(0).getCell(2).getText();
@@ -106,8 +206,12 @@ public class ReadFile {
              distalLatency = hrmDoc.getTables().get(2).getRow(19).getCell(4).getText();
              smallBreaks = hrmDoc.getTables().get(2).getRow(25).getCell(4).getText();
 
-//            System.out.println("smallBreaks   = " + templateDoc.fon);
+
+
+//            System.out.println("===  >    = " + templateDoc.getParagraphs().get(17).getRuns().get(2).getText(0));
+//            XWPFRun t = templateDoc.getTables().get(2).getRow(2).getCell(1).getParagraphs().get(0).createRun().;
 //            System.out.println("patient 22222    = " + doc2.getTables().get(1).getRow(0).getCell(0).getParagraphs().get(1).getText());
+
 
 
 //             *************************      patient name    **********************************
@@ -130,6 +234,7 @@ public class ReadFile {
 //                  *****************************   hrm table **************************************
 
              templateDoc.getTables().get(2).getRow(2).getCell(1).removeParagraph(0);
+//            templateDoc.getTables().get(2).getRow(2).getCell(1).addParagraph().createRun().setFontSize(3);
              templateDoc.getTables().get(2).getRow(2).getCell(1).setText(proximalLes);
 
             templateDoc.getTables().get(2).getRow(3).getCell(1).removeParagraph(0);
@@ -210,15 +315,33 @@ public class ReadFile {
             templateDoc.getTables().get(2).getRow(19).getCell(4).removeParagraph(0);
             templateDoc.getTables().get(2).getRow(19).getCell(4).setText(smallBreaks);
 
+///             /////////////////    UOS
+            if (upperOseVl1 != null && upperOseVl1.contains("value1")) {
+                if(Float.parseFloat(meanBasalPressure) > 104){
+                    upperOseVl1 = upperOseVl1.replaceAll("value1", "hypertensive");
+                } else if(Float.parseFloat(meanBasalPressure) < 34){
+                    upperOseVl1 = upperOseVl1.replaceAll("value1", "hypotensive");
+                }else {
+                    upperOseVl1 = upperOseVl1.replaceAll("value1", "normotensive");
+                }
+                templateDoc.getParagraphs().get(17).getRuns().get(2).setText(upperOseVl1, 0);
+            }
+            if (upperOseVl2 != null && upperOseVl2.contains("value2")) {
+                if(Float.parseFloat(meanResidualPressure) < 12){
+                    upperOseVl2 = upperOseVl2.replaceAll("value2", "complete relaxation");
+                } else {
+                    upperOseVl2 = upperOseVl2.replaceAll("value2", "incomplete relaxation");
+                }
+                templateDoc.getParagraphs().get(17).getRuns().get(6).setText(upperOseVl2, 0);
+            }
 
             templateDoc.write(new FileOutputStream("Template2.docm"));
-
 
             /////////////////////////// for tables Start End
 
             /////////////////////  for images Start
 
-           /* System.out.println("getting pictures .................... ");
+           *//* System.out.println("getting pictures .................... ");
             List<XWPFPictureData> piclist = doc.getAllPictures();
             Iterator<XWPFPictureData> iterator = piclist.iterator();
 
@@ -238,9 +361,9 @@ public class ReadFile {
             }
             System.out.println("=== " + i);
             /////////////////////  for images End
-*/
+*//*
         } catch (Exception ex) {
             ex.printStackTrace();
         }
-    }
+*/    }
 }
