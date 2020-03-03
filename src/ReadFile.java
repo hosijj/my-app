@@ -15,54 +15,51 @@ import java.util.StringTokenizer;
 public class ReadFile {
     public static void main(String[] args) throws InvalidFormatException, IOException {
         //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//          readWordDocument() {
-            try {
-                String fileName = "template.docm";
 
-                if(!(fileName.endsWith(".doc") || fileName.endsWith(".docm"))) {
-                    throw new FileFormatException();
-                } else {
+       /* XWPFDocument doc = new XWPFDocument(OPCPackage.open("Template.docm"));
 
-                    XWPFDocument doc = new XWPFDocument(new FileInputStream(fileName));
-
-                    List<XWPFTable> table = doc.getTables();
-
-                    for (XWPFTable xwpfTable : table) {
-                        List<XWPFTableRow> row = xwpfTable.getRows();
-                        for (XWPFTableRow xwpfTableRow : row) {
-                            List<XWPFTableCell> cell = xwpfTableRow.getTableCells();
-                            for (XWPFTableCell xwpfTableCell : cell) {
-                                if(xwpfTableCell!=null)
-                                {
-                                    System.out.println(xwpfTableCell.getText());
-                                    List<XWPFTable> itable = xwpfTableCell.getTables();
-                                    if(itable.size()!=0)
-                                    {
-                                        for (XWPFTable xwpfiTable : itable) {
-                                            List<XWPFTableRow> irow = xwpfiTable.getRows();
-                                            for (XWPFTableRow xwpfiTableRow : irow) {
-                                                List<XWPFTableCell> icell = xwpfiTableRow.getTableCells();
-                                                for (XWPFTableCell xwpfiTableCell : icell) {
-                                                    if(xwpfiTableCell!=null)
-                                                    {
-                                                        System.out.println(xwpfiTableCell.getText());
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
+        for (XWPFTable tbl : doc.getTables()) {
+            for (XWPFTableRow row : tbl.getRows()) {
+                for (XWPFTableCell cell : row.getTableCells()) {
+                    for (XWPFParagraph p : cell.getParagraphs()) {
+                        for (XWPFRun r : p.getRuns()) {
+                            String text = r.getText(0);
+//                            System.out.println(text);
+                            if (text != null
+                                    && text.contains("patientname")) {
+                                System.out.println("Hello");
+                                text = text.replace("patientname","hhhhhh");
+                                r.setText(text, 0);
                             }
+                            if (text != null
+                                    && text.contains("value1")) {
+                                System.out.println("Hello2");
+                                text = text.replace("value1","hhhhhh");
+                                r.setText(text, 0);
+                            }
+
+
                         }
                     }
                 }
-            } catch(FileFormatException e) {
-                e.printStackTrace();
-            } catch (FileNotFoundException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
             }
+        }
+        for (XWPFParagraph p : doc.getParagraphs()) {
+            List<XWPFRun> runs = p.getRuns();
+            if (runs != null) {
+                for (XWPFRun r : runs) {
+                    String text = r.getText(0);
+                    if (text != null && text.contains("value1")) {
+                        System.out.println("ooooy");
+                        text = text.replace("value1", "haystack");
+                        r.setText(text, 0);
+                    }
+                }
+            }
+        }
+        doc.write(new FileOutputStream("temp2.docm"));*/
+
+
        /* int count = 0;
         XWPFDocument document = new XWPFDocument();
         XWPFDocument docx = new XWPFDocument(new FileInputStream("template.docm"));
@@ -108,7 +105,6 @@ public class ReadFile {
         document.write(new FileOutputStream("test2.docx"));*/
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        /*
         System.out.println("Crawling started ... ");
         String patientName;
         String gender;
@@ -158,19 +154,19 @@ public class ReadFile {
 //            System.out.println(" Dear Dr ===== >  " + templateDoc.getParagraphs().get(12).getText());
 
 
-            XWPFParagraph p = templateDoc.getTables().get(1).getRow(0).getCell(0).getParagraphs().get(1);
-            List<XWPFRun> r = p.getRuns();
+//            XWPFParagraph p = templateDoc.getTables().get(1).getRow(0).getCell(0).getParagraphs().get(1);
+//            List<XWPFRun> r = p.getRuns();
 
-            String text = templateDoc.getTables().get(1).getRow(0).getCell(0).getParagraphs().get(1).getText();
-            String genderParagraph =  templateDoc.getParagraphs().get(14).getRuns().get(1).getText(0);
-            String upperOseVl1 =  templateDoc.getParagraphs().get(17).getRuns().get(2).getText(0);
-            String upperOseVl2 =  templateDoc.getParagraphs().get(17).getRuns().get(6).getText(0);
+//            String text = templateDoc.getTables().get(1).getRow(0).getCell(0).getParagraphs().get(1).getText();
+            String genderParagraph = templateDoc.getParagraphs().get(14).getRuns().get(1).getText(0);
+            String upperOseVl1 = templateDoc.getParagraphs().get(17).getRuns().get(2).getText(0);
+            String upperOseVl2 = templateDoc.getParagraphs().get(17).getRuns().get(6).getText(0);
             System.out.println(" =====  >       " + templateDoc.getParagraphs().size());
 
             patientName = hrmDoc.getTables().get(0).getRow(0).getCell(0).getParagraphs().get(1).getText();
             gender = hrmDoc.getTables().get(0).getRow(0).getCell(2).getText();
 
-            proximalLes = hrmDoc.getTables().get(2).getRow(2).getCell(1).getText();
+         /*   proximalLes = hrmDoc.getTables().get(2).getRow(2).getCell(1).getText();
              digitalLes = hrmDoc.getTables().get(2).getRow(3).getCell(1).getText();
              lesLength = hrmDoc.getTables().get(2).getRow(4).getCell(1).getText();
              esophagealLength = hrmDoc.getTables().get(2).getRow(5).getCell(1).getText();
@@ -204,8 +200,7 @@ public class ReadFile {
              intrabolusPressureLesr = hrmDoc.getTables().get(2).getRow(16).getCell(4).getText();
              intrabolusPressureAvgMax = hrmDoc.getTables().get(2).getRow(17).getCell(4).getText();
              distalLatency = hrmDoc.getTables().get(2).getRow(19).getCell(4).getText();
-             smallBreaks = hrmDoc.getTables().get(2).getRow(25).getCell(4).getText();
-
+             smallBreaks = hrmDoc.getTables().get(2).getRow(25).getCell(4).getText();*/
 
 
 //            System.out.println("===  >    = " + templateDoc.getParagraphs().get(17).getRuns().get(2).getText(0));
@@ -213,16 +208,15 @@ public class ReadFile {
 //            System.out.println("patient 22222    = " + doc2.getTables().get(1).getRow(0).getCell(0).getParagraphs().get(1).getText());
 
 
-
 //             *************************      patient name    **********************************
-            if (text != null && text.contains("patientname")) {
+          /*  if (text != null && text.contains("patientname")) {
                 text = text.replaceAll("patientname", patientName);
                 r.get(0).setText(text, 0);
                 text = text.replaceAll("patientname", patientName);
                 r.get(0).setText(text, 0);
-            }
+            }*/
 //                       *************************      gender    **********************************
-            if (genderParagraph.contains("gender")) {
+          /*  if (genderParagraph.contains("gender")) {
                 if (gender.equals("Male")){
                     genderParagraph = genderParagraph.replace("gender", "gentleman");
                 }
@@ -230,10 +224,10 @@ public class ReadFile {
                     genderParagraph = genderParagraph.replace("gender", "lady");
                 }
                 templateDoc.getParagraphs().get(14).getRuns().get(1).setText(genderParagraph, 0);
-            }
+            }*/
 //                  *****************************   hrm table **************************************
 
-             templateDoc.getTables().get(2).getRow(2).getCell(1).removeParagraph(0);
+        /*     templateDoc.getTables().get(2).getRow(2).getCell(1).removeParagraph(0);
 //            templateDoc.getTables().get(2).getRow(2).getCell(1).addParagraph().createRun().setFontSize(3);
              templateDoc.getTables().get(2).getRow(2).getCell(1).setText(proximalLes);
 
@@ -313,26 +307,61 @@ public class ReadFile {
             templateDoc.getTables().get(2).getRow(18).getCell(4).setText(distalLatency);
 
             templateDoc.getTables().get(2).getRow(19).getCell(4).removeParagraph(0);
-            templateDoc.getTables().get(2).getRow(19).getCell(4).setText(smallBreaks);
+            templateDoc.getTables().get(2).getRow(19).getCell(4).setText(smallBreaks);*/
 
 ///             /////////////////    UOS
-            if (upperOseVl1 != null && upperOseVl1.contains("value1")) {
-                if(Float.parseFloat(meanBasalPressure) > 104){
+            /*if (upperOseVl1 != null && upperOseVl1.contains("value1")) {
+                if (Float.parseFloat(meanBasalPressure) > 104) {
                     upperOseVl1 = upperOseVl1.replaceAll("value1", "hypertensive");
-                } else if(Float.parseFloat(meanBasalPressure) < 34){
+                } else if (Float.parseFloat(meanBasalPressure) < 34) {
                     upperOseVl1 = upperOseVl1.replaceAll("value1", "hypotensive");
-                }else {
+                } else {
                     upperOseVl1 = upperOseVl1.replaceAll("value1", "normotensive");
                 }
                 templateDoc.getParagraphs().get(17).getRuns().get(2).setText(upperOseVl1, 0);
             }
             if (upperOseVl2 != null && upperOseVl2.contains("value2")) {
-                if(Float.parseFloat(meanResidualPressure) < 12){
+                if (Float.parseFloat(meanResidualPressure) < 12) {
                     upperOseVl2 = upperOseVl2.replaceAll("value2", "complete relaxation");
                 } else {
                     upperOseVl2 = upperOseVl2.replaceAll("value2", "incomplete relaxation");
                 }
                 templateDoc.getParagraphs().get(17).getRuns().get(6).setText(upperOseVl2, 0);
+            }*/
+
+
+            for (XWPFTable tbl : templateDoc.getTables()) {
+                for (XWPFTableRow row : tbl.getRows()) {
+                    for (XWPFTableCell cell : row.getTableCells()) {
+                        for (XWPFParagraph p : cell.getParagraphs()) {
+                            for (XWPFRun r : p.getRuns()) {
+                                String text = r.getText(0);
+                                if (text != null
+                                        && text.contains("patientname")) {
+                                    System.out.println("Hello");
+                                    text = text.replace("patientname", patientName);
+                                    r.setText(text, 0);
+                                }
+
+
+
+                            }
+                        }
+                    }
+                }
+            }
+            for (XWPFParagraph p : templateDoc.getParagraphs()) {
+                List<XWPFRun> runs = p.getRuns();
+                if (runs != null) {
+                    for (XWPFRun r : runs) {
+                        String text = r.getText(0);
+                        if (text != null && text.contains("value1")) {
+                            System.out.println("ooooy");
+                            text = text.replace("value1", "haystack");
+                            r.setText(text, 0);
+                        }
+                    }
+                }
             }
 
             templateDoc.write(new FileOutputStream("Template2.docm"));
@@ -341,7 +370,7 @@ public class ReadFile {
 
             /////////////////////  for images Start
 
-           *//* System.out.println("getting pictures .................... ");
+           /* System.out.println("getting pictures .................... ");
             List<XWPFPictureData> piclist = doc.getAllPictures();
             Iterator<XWPFPictureData> iterator = piclist.iterator();
 
@@ -361,9 +390,10 @@ public class ReadFile {
             }
             System.out.println("=== " + i);
             /////////////////////  for images End
-*//*
+*/
         } catch (Exception ex) {
             ex.printStackTrace();
         }
-*/    }
+
+    }
 }
