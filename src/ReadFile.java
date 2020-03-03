@@ -166,41 +166,41 @@ public class ReadFile {
             patientName = hrmDoc.getTables().get(0).getRow(0).getCell(0).getParagraphs().get(1).getText();
             gender = hrmDoc.getTables().get(0).getRow(0).getCell(2).getText();
 
-         /*   proximalLes = hrmDoc.getTables().get(2).getRow(2).getCell(1).getText();
-             digitalLes = hrmDoc.getTables().get(2).getRow(3).getCell(1).getText();
-             lesLength = hrmDoc.getTables().get(2).getRow(4).getCell(1).getText();
-             esophagealLength = hrmDoc.getTables().get(2).getRow(5).getCell(1).getText();
-             pip = hrmDoc.getTables().get(2).getRow(6).getCell(1).getText();
-             intraabdominalLesLength = hrmDoc.getTables().get(2).getRow(7).getCell(1).getText();
-             hiatalHernia = hrmDoc.getTables().get(2).getRow(8).getCell(1).getText();
-             basalRespiratoryMin = hrmDoc.getTables().get(2).getRow(11).getCell(1).getText();
-             basalRespiratoryMean = hrmDoc.getTables().get(2).getRow(12).getCell(1).getText();
-             residualMean = hrmDoc.getTables().get(2).getRow(13).getCell(1).getText();
-             residualHighest = hrmDoc.getTables().get(2).getRow(14).getCell(1).getText();
-             percentRelaxation = hrmDoc.getTables().get(2).getRow(15).getCell(1).getText();
-             location = hrmDoc.getTables().get(2).getRow(28).getCell(1).getText();
-             meanBasalPressure = hrmDoc.getTables().get(2).getRow(29).getCell(1).getText();
-             meanResidualPressure = hrmDoc.getTables().get(2).getRow(30).getCell(1).getText();
-             relaxationTimeToNadir = hrmDoc.getTables().get(2).getRow(31).getCell(1).getText();
-             relaxationDuration = hrmDoc.getTables().get(2).getRow(32).getCell(1).getText();
+            proximalLes = hrmDoc.getTables().get(2).getRow(2).getCell(1).getText();
+            digitalLes = hrmDoc.getTables().get(2).getRow(3).getCell(1).getText();
+            lesLength = hrmDoc.getTables().get(2).getRow(4).getCell(1).getText();
+            esophagealLength = hrmDoc.getTables().get(2).getRow(5).getCell(1).getText();
+            pip = hrmDoc.getTables().get(2).getRow(6).getCell(1).getText();
+            intraabdominalLesLength = hrmDoc.getTables().get(2).getRow(7).getCell(1).getText();
+            hiatalHernia = hrmDoc.getTables().get(2).getRow(8).getCell(1).getText();
+            basalRespiratoryMin = hrmDoc.getTables().get(2).getRow(11).getCell(1).getText();
+            basalRespiratoryMean = hrmDoc.getTables().get(2).getRow(12).getCell(1).getText();
+            residualMean = hrmDoc.getTables().get(2).getRow(13).getCell(1).getText();
+            residualHighest = hrmDoc.getTables().get(2).getRow(14).getCell(1).getText();
+            percentRelaxation = hrmDoc.getTables().get(2).getRow(15).getCell(1).getText();
+            location = hrmDoc.getTables().get(2).getRow(28).getCell(1).getText();
+            meanBasalPressure = hrmDoc.getTables().get(2).getRow(29).getCell(1).getText();
+            meanResidualPressure = hrmDoc.getTables().get(2).getRow(30).getCell(1).getText();
+            relaxationTimeToNadir = hrmDoc.getTables().get(2).getRow(31).getCell(1).getText();
+            relaxationDuration = hrmDoc.getTables().get(2).getRow(32).getCell(1).getText();
 
-             //  ********************************  secondColumn
-             numberOfSwallows = hrmDoc.getTables().get(2).getRow(1).getCell(4).getText();
-             peristaltic = hrmDoc.getTables().get(2).getRow(3).getCell(4).getText();
-             simultaneous = hrmDoc.getTables().get(2).getRow(4).getCell(4).getText();
-             failed = hrmDoc.getTables().get(2).getRow(5).getCell(4).getText();
-             meanWaveAmplitude = hrmDoc.getTables().get(2).getRow(7).getCell(4).getText();
-             meanWaveDuration = hrmDoc.getTables().get(2).getRow(8).getCell(4).getText();
-             doublePeakedWaves = hrmDoc.getTables().get(2).getRow(9).getCell(4).getText();
-             triplePeakedWaves = hrmDoc.getTables().get(2).getRow(10).getCell(4).getText();
-             velocity = hrmDoc.getTables().get(2).getRow(11).getCell(4).getText();
-             distalContracliteIntegralMean = hrmDoc.getTables().get(2).getRow(13).getCell(4).getText();
-             distalContracliteIntegralHighest = hrmDoc.getTables().get(2).getRow(14).getCell(4).getText();
-             contractileFrontVelocity = hrmDoc.getTables().get(2).getRow(15).getCell(4).getText();
-             intrabolusPressureLesr = hrmDoc.getTables().get(2).getRow(16).getCell(4).getText();
-             intrabolusPressureAvgMax = hrmDoc.getTables().get(2).getRow(17).getCell(4).getText();
-             distalLatency = hrmDoc.getTables().get(2).getRow(19).getCell(4).getText();
-             smallBreaks = hrmDoc.getTables().get(2).getRow(25).getCell(4).getText();*/
+            //  ********************************  secondColumn
+            numberOfSwallows = hrmDoc.getTables().get(2).getRow(1).getCell(4).getText();
+            peristaltic = hrmDoc.getTables().get(2).getRow(3).getCell(4).getText();
+            simultaneous = hrmDoc.getTables().get(2).getRow(4).getCell(4).getText();
+            failed = hrmDoc.getTables().get(2).getRow(5).getCell(4).getText();
+            meanWaveAmplitude = hrmDoc.getTables().get(2).getRow(7).getCell(4).getText();
+            meanWaveDuration = hrmDoc.getTables().get(2).getRow(8).getCell(4).getText();
+            doublePeakedWaves = hrmDoc.getTables().get(2).getRow(9).getCell(4).getText();
+            triplePeakedWaves = hrmDoc.getTables().get(2).getRow(10).getCell(4).getText();
+            velocity = hrmDoc.getTables().get(2).getRow(11).getCell(4).getText();
+            distalContracliteIntegralMean = hrmDoc.getTables().get(2).getRow(13).getCell(4).getText();
+            distalContracliteIntegralHighest = hrmDoc.getTables().get(2).getRow(14).getCell(4).getText();
+            contractileFrontVelocity = hrmDoc.getTables().get(2).getRow(15).getCell(4).getText();
+            intrabolusPressureLesr = hrmDoc.getTables().get(2).getRow(16).getCell(4).getText();
+            intrabolusPressureAvgMax = hrmDoc.getTables().get(2).getRow(17).getCell(4).getText();
+            distalLatency = hrmDoc.getTables().get(2).getRow(19).getCell(4).getText();
+            smallBreaks = hrmDoc.getTables().get(2).getRow(25).getCell(4).getText();
 
 
 //            System.out.println("===  >    = " + templateDoc.getParagraphs().get(17).getRuns().get(2).getText(0));
@@ -225,109 +225,6 @@ public class ReadFile {
                 }
                 templateDoc.getParagraphs().get(14).getRuns().get(1).setText(genderParagraph, 0);
             }*/
-//                  *****************************   hrm table **************************************
-
-        /*     templateDoc.getTables().get(2).getRow(2).getCell(1).removeParagraph(0);
-//            templateDoc.getTables().get(2).getRow(2).getCell(1).addParagraph().createRun().setFontSize(3);
-             templateDoc.getTables().get(2).getRow(2).getCell(1).setText(proximalLes);
-
-            templateDoc.getTables().get(2).getRow(3).getCell(1).removeParagraph(0);
-            templateDoc.getTables().get(2).getRow(3).getCell(1).setText(lesLength);
-
-            templateDoc.getTables().get(2).getRow(4).getCell(1).removeParagraph(0);
-            templateDoc.getTables().get(2).getRow(4).getCell(1).setText(esophagealLength);
-
-            templateDoc.getTables().get(2).getRow(5).getCell(1).removeParagraph(0);
-            templateDoc.getTables().get(2).getRow(5).getCell(1).setText(intraabdominalLesLength);
-
-            templateDoc.getTables().get(2).getRow(6).getCell(1).removeParagraph(0);
-            templateDoc.getTables().get(2).getRow(6).getCell(1).setText(hiatalHernia);
-
-
-            templateDoc.getTables().get(2).getRow(9).getCell(1).removeParagraph(0);
-            templateDoc.getTables().get(2).getRow(9).getCell(1).setText(basalRespiratoryMin);
-
-
-            templateDoc.getTables().get(2).getRow(10).getCell(1).removeParagraph(0);
-            templateDoc.getTables().get(2).getRow(10).getCell(1).setText(basalRespiratoryMean);
-
-
-            templateDoc.getTables().get(2).getRow(11).getCell(1).removeParagraph(0);
-            templateDoc.getTables().get(2).getRow(11).getCell(1).setText(residualMean);
-
-
-            templateDoc.getTables().get(2).getRow(14).getCell(1).removeParagraph(0);
-            templateDoc.getTables().get(2).getRow(14).getCell(1).setText(meanBasalPressure);
-
-
-            templateDoc.getTables().get(2).getRow(15).getCell(1).removeParagraph(0);
-            templateDoc.getTables().get(2).getRow(15).getCell(1).setText(meanResidualPressure);
-
-            //  ****************************************** second column
-            templateDoc.getTables().get(2).getRow(1).getCell(4).removeParagraph(0);
-            templateDoc.getTables().get(2).getRow(1).getCell(4).setText(numberOfSwallows);
-
-            templateDoc.getTables().get(2).getRow(3).getCell(4).removeParagraph(0);
-            templateDoc.getTables().get(2).getRow(3).getCell(4).setText(peristaltic);
-
-            templateDoc.getTables().get(2).getRow(4).getCell(4).removeParagraph(0);
-            templateDoc.getTables().get(2).getRow(4).getCell(4).setText(simultaneous);
-
-            templateDoc.getTables().get(2).getRow(5).getCell(4).removeParagraph(0);
-            templateDoc.getTables().get(2).getRow(5).getCell(4).setText(failed);
-
-            templateDoc.getTables().get(2).getRow(7).getCell(4).removeParagraph(0);
-            templateDoc.getTables().get(2).getRow(7).getCell(4).setText(meanWaveAmplitude);
-
-            templateDoc.getTables().get(2).getRow(8).getCell(4).removeParagraph(0);
-            templateDoc.getTables().get(2).getRow(8).getCell(4).setText(meanWaveDuration);
-
-            templateDoc.getTables().get(2).getRow(9).getCell(4).removeParagraph(0);
-            templateDoc.getTables().get(2).getRow(9).getCell(4).setText(doublePeakedWaves);
-
-            templateDoc.getTables().get(2).getRow(10).getCell(4).removeParagraph(0);
-            templateDoc.getTables().get(2).getRow(10).getCell(4).setText(triplePeakedWaves);
-
-            templateDoc.getTables().get(2).getRow(11).getCell(4).removeParagraph(0);
-            templateDoc.getTables().get(2).getRow(11).getCell(4).setText(velocity);
-
-            templateDoc.getTables().get(2).getRow(13).getCell(4).removeParagraph(0);
-            templateDoc.getTables().get(2).getRow(13).getCell(4).setText(distalContracliteIntegralMean);
-
-            templateDoc.getTables().get(2).getRow(14).getCell(4).removeParagraph(0);
-            templateDoc.getTables().get(2).getRow(14).getCell(4).setText(contractileFrontVelocity);
-
-            templateDoc.getTables().get(2).getRow(15).getCell(4).removeParagraph(0);
-            templateDoc.getTables().get(2).getRow(15).getCell(4).setText(intrabolusPressureLesr);
-
-            templateDoc.getTables().get(2).getRow(16).getCell(4).removeParagraph(0);
-            templateDoc.getTables().get(2).getRow(16).getCell(4).setText(intrabolusPressureAvgMax);
-
-            templateDoc.getTables().get(2).getRow(18).getCell(4).removeParagraph(0);
-            templateDoc.getTables().get(2).getRow(18).getCell(4).setText(distalLatency);
-
-            templateDoc.getTables().get(2).getRow(19).getCell(4).removeParagraph(0);
-            templateDoc.getTables().get(2).getRow(19).getCell(4).setText(smallBreaks);*/
-
-///             /////////////////    UOS
-            /*if (upperOseVl1 != null && upperOseVl1.contains("value1")) {
-                if (Float.parseFloat(meanBasalPressure) > 104) {
-                    upperOseVl1 = upperOseVl1.replaceAll("value1", "hypertensive");
-                } else if (Float.parseFloat(meanBasalPressure) < 34) {
-                    upperOseVl1 = upperOseVl1.replaceAll("value1", "hypotensive");
-                } else {
-                    upperOseVl1 = upperOseVl1.replaceAll("value1", "normotensive");
-                }
-                templateDoc.getParagraphs().get(17).getRuns().get(2).setText(upperOseVl1, 0);
-            }
-            if (upperOseVl2 != null && upperOseVl2.contains("value2")) {
-                if (Float.parseFloat(meanResidualPressure) < 12) {
-                    upperOseVl2 = upperOseVl2.replaceAll("value2", "complete relaxation");
-                } else {
-                    upperOseVl2 = upperOseVl2.replaceAll("value2", "incomplete relaxation");
-                }
-                templateDoc.getParagraphs().get(17).getRuns().get(6).setText(upperOseVl2, 0);
-            }*/
 
 
             for (XWPFTable tbl : templateDoc.getTables()) {
@@ -335,14 +232,114 @@ public class ReadFile {
                     for (XWPFTableCell cell : row.getTableCells()) {
                         for (XWPFParagraph p : cell.getParagraphs()) {
                             for (XWPFRun r : p.getRuns()) {
+
                                 String text = r.getText(0);
-                                if (text != null
-                                        && text.contains("patientname")) {
-                                    System.out.println("Hello");
+
+                                if (text != null && text.contains("patientname")) {
                                     text = text.replace("patientname", patientName);
                                     r.setText(text, 0);
                                 }
+                                //  ****************************************** first column
+                                if (text != null && text.contains("proximalLes")) {
+                                    text = text.replace("proximalLes", proximalLes);
+                                    r.setText(text, 0);
+                                }
+                                if (text != null && text.contains("lesLength")) {
+                                    text = text.replace("lesLength", lesLength);
+                                    r.setText(text, 0);
+                                }
+                                if (text != null && text.contains("esophagealLength")) {
+                                    text = text.replace("esophagealLength", esophagealLength);
+                                    r.setText(text, 0);
+                                }
+                                if (text != null && text.contains("intraabdominalLesLength")) {
+                                    text = text.replace("intraabdominalLesLength", intraabdominalLesLength);
+                                    r.setText(text, 0);
+                                }
+                                if (text != null && text.contains("hiatalHernia")) {
+                                    text = text.replace("hiatalHernia", hiatalHernia);
+                                    r.setText(text, 0);
+                                }
+                                if (text != null && text.contains("basalRespiratoryMin")) {
+                                    text = text.replace("basalRespiratoryMin", basalRespiratoryMin);
+                                    r.setText(text, 0);
+                                }
+                                if (text != null && text.contains("basalRespiratoryMean")) {
+                                    text = text.replace("basalRespiratoryMean", basalRespiratoryMean);
+                                    r.setText(text, 0);
+                                }
+                                if (text != null && text.contains("meanBasalPressure")) {
+                                    text = text.replace("meanBasalPressure", meanBasalPressure);
+                                    r.setText(text, 0);
+                                }
+                                if (text != null && text.contains("meanResidualPressure")) {
+                                    text = text.replace("meanResidualPressure", meanResidualPressure);
+                                    r.setText(text, 0);
+                                }
 
+                                //  ****************************************** second column
+
+
+                                if (text != null && text.contains("numberOfSwallows")) {
+                                    text = text.replace("numberOfSwallows", numberOfSwallows);
+                                    r.setText(text, 0);
+                                }
+                                if (text != null && text.contains("peristaltic")) {
+                                    text = text.replace("peristaltic", peristaltic);
+                                    r.setText(text, 0);
+                                }
+                                if (text != null && text.contains("simultaneous")) {
+                                    text = text.replace("simultaneous", simultaneous);
+                                    r.setText(text, 0);
+                                }
+                                if (text != null && text.contains("failed")) {
+                                    text = text.replace("failed", failed);
+                                    r.setText(text, 0);
+                                }
+                                if (text != null && text.contains("meanWaveAmplitude")) {
+                                    text = text.replace("meanWaveAmplitude", meanWaveAmplitude);
+                                    r.setText(text, 0);
+                                }
+                                if (text != null && text.contains("meanWaveDuration")) {
+                                    text = text.replace("meanWaveDuration", meanWaveDuration);
+                                    r.setText(text, 0);
+                                }
+                                if (text != null && text.contains("doublePeakedWaves")) {
+                                    text = text.replace("doublePeakedWaves", doublePeakedWaves);
+                                    r.setText(text, 0);
+                                }
+                                if (text != null && text.contains("triplePeakedWaves")) {
+                                    text = text.replace("triplePeakedWaves", triplePeakedWaves);
+                                    r.setText(text, 0);
+                                }
+                                if (text != null && text.contains("velocity")) {
+                                    text = text.replace("velocity", velocity);
+                                    r.setText(text, 0);
+                                }
+                                if (text != null && text.contains("distalContracliteIntegralMean")) {
+                                    text = text.replace("distalContracliteIntegralMean", distalContracliteIntegralMean);
+                                    r.setText(text, 0);
+                                }
+                                if (text != null && text.contains("contractileFrontVelocity")) {
+                                    text = text.replace("contractileFrontVelocity", contractileFrontVelocity);
+                                    r.setText(text, 0);
+                                }
+                                if (text != null && text.contains("intrabolusPressureLesr")) {
+                                    text = text.replace("intrabolusPressureLesr", intrabolusPressureLesr);
+                                    r.setText(text, 0);
+                                }
+                                if (text != null && text.contains("intrabolusPressureAvgMax")) {
+                                    text = text.replace("intrabolusPressureAvgMax", intrabolusPressureAvgMax);
+                                    r.setText(text, 0);
+                                }
+                                if (text != null && text.contains("distalLatency")) {
+                                    text = text.replace("distalLatency", distalLatency);
+                                    r.setText(text, 0);
+                                }
+                                if (text != null && text.contains("smallBreaks")) {
+                                    text = text.replace("smallBreaks", smallBreaks);
+                                    r.setText(text, 0);
+                                }
 
 
                             }
@@ -354,12 +351,89 @@ public class ReadFile {
                 List<XWPFRun> runs = p.getRuns();
                 if (runs != null) {
                     for (XWPFRun r : runs) {
+
                         String text = r.getText(0);
-                        if (text != null && text.contains("value1")) {
-                            System.out.println("ooooy");
-                            text = text.replace("value1", "haystack");
+
+                        if (text != null && text.contains("gender")) {
+                            if (gender.equals("Male")) {
+                                text = text.replace("gender", "gentleman");
+                            }
+                            if (gender.equals("female")) {
+                                text = text.replace("gender", "lady");
+                            }
                             r.setText(text, 0);
                         }
+
+                        if (text != null && text.contains("value1")) {
+                            if (Float.parseFloat(meanBasalPressure) > 104) {
+                                text = text.replaceAll("value1", "hypertensive");
+                            } else if (Float.parseFloat(meanBasalPressure) < 34) {
+                                text = text.replaceAll("value1", "hypotensive");
+                            } else {
+                                text = text.replaceAll("value1", "normotensive");
+                            }
+                            r.setText(text, 0);
+                        }
+
+                        if (text != null && text.contains("value2")) {
+                            if (Float.parseFloat(meanResidualPressure) < 12) {
+                                text = text.replaceAll("value2", "complete relaxation");
+                            } else {
+                                text = text.replaceAll("value2", "incomplete relaxation");
+                            }
+                            r.setText(text, 0);
+                        }
+
+                        // todo value3
+
+                        if (text != null && text.contains("value4")) {
+                            if (Float.parseFloat(basalRespiratoryMin) < 4.8) {
+                                text = text.replaceAll("value4", "hypotensive");
+                            } else if (Float.parseFloat(basalRespiratoryMin) > 32) {
+                                text = text.replaceAll("value4", "hypertensive");
+                            } else {
+                                text = text.replaceAll("value4", "normotensive");
+                            }
+                            r.setText(text, 0);
+                        }
+
+                        if (text != null && text.contains("value5")) {
+                            if (Float.parseFloat(residualMean) < 15) {
+                                text = text.replaceAll("value5", "complete relaxation");
+                            } else {
+                                text = text.replaceAll("value5", "reffer to jafar");
+                                // todo for other conditions
+                            }
+                            r.setText(text, 0);
+                        }
+
+                        if (text != null && text.contains("value6")) {
+                            if (hiatalHernia.equals("No")) {
+                                text = text.replaceAll("value6", "No");
+                            } else {
+                                text = text.replaceAll("value6", hiatalHernia);
+                                // todo for other conditions
+                            }
+                            r.setText(text, 0);
+                        }
+
+                        if (text != null && text.contains("value7")) {
+                            if (Float.parseFloat(residualMean) > 15 && Float.parseFloat(failed) == 100 && Float.parseFloat(distalContracliteIntegralMean) < 450) {
+                                text = text.replaceAll("value6", "Type I achalasia(classic achalasia)");
+                            } else if (Float.parseFloat(residualMean) > 15 && Float.parseFloat(failed) == 100 && (Float.parseFloat(distalContracliteIntegralMean) > 450 && Float.parseFloat(distalContracliteIntegralMean) < 1000)) {
+                                text = text.replaceAll("value6", "Type II achalasia(with esophageal compression)");
+                            } else if (Float.parseFloat(residualMean) > 15 && Float.parseFloat(failed) == 100 && Float.parseFloat(distalContracliteIntegralMean) > 1000 ) {
+                                text = text.replaceAll("value6", "Type III achalasia(spastic achalasia)");
+                            } else if (Float.parseFloat(residualMean) > 15 && Float.parseFloat(failed) < 100) {
+                                text = text.replaceAll("value6", "OGJ outflow obstruction");
+                            } else if (Float.parseFloat(residualMean) < 15 && Float.parseFloat(failed) == 100) {
+                                text = text.replaceAll("value6", "Absent contractility");
+                            } else if (Float.parseFloat(residualMean) < 15 && Float.parseFloat(failed) < 100) {
+                                text = text.replaceAll("value6", " ");
+                            }
+                            r.setText(text, 0);
+                        }
+
                     }
                 }
             }
