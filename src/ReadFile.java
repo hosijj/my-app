@@ -148,20 +148,9 @@ public class ReadFile {
             XWPFDocument templateDoc = new XWPFDocument(OPCPackage.open("Template.docm"));
 
             /////////////////////////// for tables Start
-//            System.out.println("Procedure date ===== >  " + templateDoc.getParagraphs().get(8).getText());
-//            System.out.println(" Procedure ===== >  " + templateDoc.getParagraphs().get(9).getText());
-//            System.out.println(" Indications ===== >  " + templateDoc.getParagraphs().get(10).getText());
-//            System.out.println(" Dear Dr ===== >  " + templateDoc.getParagraphs().get(12).getText());
-
 
 //            XWPFParagraph p = templateDoc.getTables().get(1).getRow(0).getCell(0).getParagraphs().get(1);
 //            List<XWPFRun> r = p.getRuns();
-
-//            String text = templateDoc.getTables().get(1).getRow(0).getCell(0).getParagraphs().get(1).getText();
-            String genderParagraph = templateDoc.getParagraphs().get(14).getRuns().get(1).getText(0);
-            String upperOseVl1 = templateDoc.getParagraphs().get(17).getRuns().get(2).getText(0);
-            String upperOseVl2 = templateDoc.getParagraphs().get(17).getRuns().get(6).getText(0);
-            System.out.println(" =====  >       " + templateDoc.getParagraphs().size());
 
             patientName = hrmDoc.getTables().get(0).getRow(0).getCell(0).getParagraphs().get(1).getText();
             gender = hrmDoc.getTables().get(0).getRow(0).getCell(2).getText();
@@ -202,29 +191,42 @@ public class ReadFile {
             distalLatency = hrmDoc.getTables().get(2).getRow(19).getCell(4).getText();
             smallBreaks = hrmDoc.getTables().get(2).getRow(25).getCell(4).getText();
 
+//         ****************************************************   last Table
+            int distalLatencySecCount = 0;
+            int iom = 0;
+            int jackHammer = 0;
+            int fragmanted = 0;
+            int largeBreaksSec = 0;
 
-//            System.out.println("===  >    = " + templateDoc.getParagraphs().get(17).getRuns().get(2).getText(0));
+            for (int i = 2; i < 13; i++) {
+                if (!hrmDoc.getTables().get(5).getRow(19).getCell(i).getText().equals("") && Float.parseFloat(hrmDoc.getTables().get(5).getRow(19).getCell(i).getText()) < 4.5) {
+                    distalLatencySecCount++;
+                }
+            }
+            for (int j = 2; j < 13; j++) {
+                if (!hrmDoc.getTables().get(5).getRow(13).getCell(j).getText().equals("")) {
+                    if (Float.parseFloat(hrmDoc.getTables().get(5).getRow(13).getCell(j).getText()) < 450) {
+                        iom++;
+                    }
+                    if (Float.parseFloat(hrmDoc.getTables().get(5).getRow(13).getCell(j).getText()) > 8000) {
+                        jackHammer++;
+                    }
+                    if (Float.parseFloat(hrmDoc.getTables().get(5).getRow(13).getCell(j).getText()) > 450) {
+                        fragmanted++;
+                    }
+                }
+            }
+            for (int k = 2; k < 13; k++) {
+                if (!hrmDoc.getTables().get(5).getRow(13).getCell(k).getText().equals("")) {
+                    if (Float.parseFloat(hrmDoc.getTables().get(5).getRow(13).getCell(k).getText()) > 0) {
+                        largeBreaksSec++;
+                    }
+                }
+            }
+
+//            System.out.println("===  >    = " + largeBreaksSec);
 //            XWPFRun t = templateDoc.getTables().get(2).getRow(2).getCell(1).getParagraphs().get(0).createRun().;
 //            System.out.println("patient 22222    = " + doc2.getTables().get(1).getRow(0).getCell(0).getParagraphs().get(1).getText());
-
-
-//             *************************      patient name    **********************************
-          /*  if (text != null && text.contains("patientname")) {
-                text = text.replaceAll("patientname", patientName);
-                r.get(0).setText(text, 0);
-                text = text.replaceAll("patientname", patientName);
-                r.get(0).setText(text, 0);
-            }*/
-//                       *************************      gender    **********************************
-          /*  if (genderParagraph.contains("gender")) {
-                if (gender.equals("Male")){
-                    genderParagraph = genderParagraph.replace("gender", "gentleman");
-                }
-                if (gender.equals("female")){
-                    genderParagraph = genderParagraph.replace("gender", "lady");
-                }
-                templateDoc.getParagraphs().get(14).getRuns().get(1).setText(genderParagraph, 0);
-            }*/
 
 
             for (XWPFTable tbl : templateDoc.getTables()) {
@@ -412,24 +414,33 @@ public class ReadFile {
                                 text = text.replaceAll("value6", "No");
                             } else {
                                 text = text.replaceAll("value6", hiatalHernia);
-                                // todo for other conditions
                             }
                             r.setText(text, 0);
                         }
 
                         if (text != null && text.contains("value7")) {
                             if (Float.parseFloat(residualMean) > 15 && Float.parseFloat(failed) == 100 && Float.parseFloat(distalContracliteIntegralMean) < 450) {
-                                text = text.replaceAll("value6", "Type I achalasia(classic achalasia)");
+                                text = text.replaceAll("value7", "Type I achalasia(classic achalasia)");
                             } else if (Float.parseFloat(residualMean) > 15 && Float.parseFloat(failed) == 100 && (Float.parseFloat(distalContracliteIntegralMean) > 450 && Float.parseFloat(distalContracliteIntegralMean) < 1000)) {
-                                text = text.replaceAll("value6", "Type II achalasia(with esophageal compression)");
-                            } else if (Float.parseFloat(residualMean) > 15 && Float.parseFloat(failed) == 100 && Float.parseFloat(distalContracliteIntegralMean) > 1000 ) {
-                                text = text.replaceAll("value6", "Type III achalasia(spastic achalasia)");
+                                text = text.replaceAll("value7", "Type II achalasia(with esophageal compression)");
+                            } else if (Float.parseFloat(residualMean) > 15 && Float.parseFloat(failed) == 100 && Float.parseFloat(distalContracliteIntegralMean) > 1000) {
+                                text = text.replaceAll("value7", "Type III achalasia(spastic achalasia)");
                             } else if (Float.parseFloat(residualMean) > 15 && Float.parseFloat(failed) < 100) {
-                                text = text.replaceAll("value6", "OGJ outflow obstruction");
+                                text = text.replaceAll("value7", "OGJ outflow obstruction");
                             } else if (Float.parseFloat(residualMean) < 15 && Float.parseFloat(failed) == 100) {
-                                text = text.replaceAll("value6", "Absent contractility");
+                                text = text.replaceAll("value7", "Absent contractility");
                             } else if (Float.parseFloat(residualMean) < 15 && Float.parseFloat(failed) < 100) {
-                                text = text.replaceAll("value6", " ");
+                                if (distalLatencySecCount > 2) {
+                                    text = text.replaceAll("value7", "Distal oesophageal spasm");
+                                } else if (iom > 5) {
+                                    text = text.replaceAll("value7", "Ineffective oesophageal motility (IOM)");
+                                } else if (jackHammer > 2) {
+                                    text = text.replaceAll("value7", "Hypercontractile esophagus (jackhammer)");
+                                } else if (fragmanted > 6 && largeBreaksSec > 5) {
+                                    text = text.replaceAll("value7", "Fragmented peristalsis");
+                                }
+                            } else {
+                                text = text.replaceAll("value7", "Normal oesophageal motility");
                             }
                             r.setText(text, 0);
                         }
