@@ -234,9 +234,7 @@ public class ReadFile {
                     for (XWPFTableCell cell : row.getTableCells()) {
                         for (XWPFParagraph p : cell.getParagraphs()) {
                             for (XWPFRun r : p.getRuns()) {
-
                                 String text = r.getText(0);
-
                                 if (text != null && text.contains("patientname")) {
                                     text = text.replace("patientname", patientName);
                                     r.setText(text, 0);
@@ -455,8 +453,8 @@ public class ReadFile {
 
             /////////////////////  for images Start
 
-           /* System.out.println("getting pictures .................... ");
-            List<XWPFPictureData> piclist = doc.getAllPictures();
+          /*  System.out.println("getting pictures .................... ");
+            List<XWPFPictureData> piclist = hrmDoc.getAllPictures();
             Iterator<XWPFPictureData> iterator = piclist.iterator();
 
             int i = 0;
@@ -467,18 +465,16 @@ public class ReadFile {
                 BufferedImage imag = ImageIO.read(new ByteArrayInputStream(bytepic));
 
                 System.out.println(imag.getWidth());
-                System.out.println(imag.getPropertyNames());
 
                 if(imag.getWidth() == 1087)
                 ImageIO.write(imag, "jpg", new File("imagesFromDocx/" + i + ".jpg"));
                 i++;
             }
-            System.out.println("=== " + i);
-            /////////////////////  for images End
-*/
+            System.out.println("=== " + i);*/
         } catch (Exception ex) {
             ex.printStackTrace();
         }
+        /////////////////////  for images End
 
     }
 }
