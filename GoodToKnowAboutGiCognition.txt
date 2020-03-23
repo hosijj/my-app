@@ -50,3 +50,12 @@ http://svn.apache.org/repos/asf/tika/trunk/tika-parsers/src/main/java/org/apache
 and 
 
 https://stackoverflow.com/questions/44280677/how-to-get-pictures-and-tables-from-docx-document-using-apache-poi
+
+
+********************* 4 ******************************************** split string   ***********************************************************************
+
+https://stackoverflow.com/questions/7384791/splitting-strings-through-regular-expressions-by-punctuation-and-whitespace-etc
+
+patterns: 
+https://docs.oracle.com/javase/6/docs/api/java/util/regex/Pattern.html
+

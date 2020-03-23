@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aefc68c8-7dc2-442d-9d36-90748d10a897" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Gi-Doc/Hossein - template algorythm2.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gi-Doc/~$ssein - template algorythm2.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/rtfkit_nosrc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GiInterface.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GiInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/~$pdance.rtf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/dom4j_1_6_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/dom4j_1_6_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GoodToKnowAboutGiCognition.txt" beforeDir="false" afterPath="$PROJECT_DIR$/GoodToKnowAboutGiCognition.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Impdance.rtf" beforeDir="false" afterPath="$PROJECT_DIR$/Impdance.rtf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template.docm" beforeDir="false" afterPath="$PROJECT_DIR$/Template.docm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Template2.docm" beforeDir="false" afterPath="$PROJECT_DIR$/Template2.docm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GiCognition/ReadFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GiCognition/ReadFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DocxManipulator.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ReadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadFile.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,24 +29,22 @@
     <session id="81121931">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.11" value="2" />
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.4" value="3" />
+          <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="4" />
           <entry key="iml" value="1" />
-          <entry key="java" value="3" />
+          <entry key="java" value="2" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
@@ -43,52 +52,60 @@
         <counts>
           <entry key="CLASS" value="4" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="3" />
+          <entry key="JAVA" value="2" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2677" />
-          <entry key="txt" value="100" />
+          <entry key="java" value="1556" />
+          <entry key="txt" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2677" />
-          <entry key="PLAIN_TEXT" value="100" />
+          <entry key="JAVA" value="1556" />
+          <entry key="PLAIN_TEXT" value="34" />
         </counts>
       </usages-collector>
     </session>
     <session id="206898564">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.67" value="1" />
+          <entry key="project.open.time.43" value="1" />
+          <entry key="project.open.time.67" value="2" />
+          <entry key="project.open.time.88" value="1" />
           <entry key="project.open.time.93" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.96" value="1" />
+          <entry key="project.open.time.98" value="1" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1389" />
+          <entry key="java" value="3556" />
+          <entry key="txt" value="35" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1389" />
+          <entry key="JAVA" value="3556" />
+          <entry key="PLAIN_TEXT" value="35" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="1" />
+          <entry key="form" value="2" />
+          <entry key="java" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="1" />
+          <entry key="GUI_DESIGNER_FORM" value="2" />
+          <entry key="JAVA" value="8" />
         </counts>
       </usages-collector>
     </session>
@@ -98,16 +115,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ReadFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="801">
-              <caret line="462" column="54" lean-forward="true" selection-start-line="462" selection-start-column="54" selection-end-line="462" selection-end-column="54" />
+            <state relative-caret-position="153">
+              <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/GiInterface.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="117">
+              <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GiInterface.form">
+          <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
     </leaf>
@@ -126,9 +160,23 @@
       <find>sette</find>
       <find>value1</find>
       <find>text</find>
-      <find>meanBasalPressure</find>
-      <find>peristaltic</find>
-      <find>===</find>
+      <find>distalContracliteIntegralMean</find>
+      <find>iom</find>
+      <find>FileInputStream</find>
+      <find>Impdance</find>
+      <find>esophagealLength</find>
+      <find>value7</find>
+      <find>value8</find>
+      <find>value</find>
+      <find>value9</find>
+      <find>para</find>
+      <find>param2</find>
+      <find>param</find>
+      <find>param3</find>
+      <find>percentTimeclearanceUpright</find>
+      <find>refluxEpisodeActivity</find>
+      <find>comboBox1</find>
+      <find>residualmean</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -139,6 +187,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/ReadFile.java" />
+        <option value="$PROJECT_DIR$/src/GiInterface.form" />
+        <option value="$PROJECT_DIR$/src/GiInterface.java" />
       </list>
     </option>
   </component>
@@ -149,8 +199,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1440" />
-    <option name="height" value="860" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -158,20 +210,44 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="GiCognition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GiCognition" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GiCognition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GiCognition" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GiCognition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GiCognition" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="GiInterface" type="e9f4de52:FormNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1583205445063" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584880453478" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/rtfkit_nosrc.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -220,8 +296,12 @@
       <workItem from="1581997716710" duration="7215000" />
       <workItem from="1582083689986" duration="5229000" />
       <workItem from="1583043940478" duration="947000" />
-      <workItem from="1583063311179" duration="5479000" />
-      <workItem from="1583207325169" duration="234000" />
+      <workItem from="1583063311179" duration="5616000" />
+      <workItem from="1583205150311" duration="108000" />
+      <workItem from="1583925166307" duration="6490000" />
+      <workItem from="1584604346987" duration="17926000" />
+      <workItem from="1584861673428" duration="12349000" />
+      <workItem from="1584936274356" duration="325000" />
     </task>
     <task id="LOCAL-00001" summary="commit 1 patient name and gender">
       <created>1583063737234</created>
@@ -230,31 +310,30 @@
       <option name="project" value="LOCAL" />
       <updated>1583063737235</updated>
     </task>
-    <task id="LOCAL-00002" summary="last part of HRM">
-      <created>1583213558349</created>
+    <task id="LOCAL-00002" summary="new forloop for table and paragraph">
+      <created>1583204713068</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1583213558349</updated>
+      <updated>1583204713068</updated>
     </task>
-    <task id="LOCAL-00003" summary="last part of HRM - complete algorithm except some ...">
-      <created>1583299574362</created>
+    <task id="LOCAL-00003" summary="new forloop for table and paragraph">
+      <created>1583204763050</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1583299574362</updated>
+      <updated>1583204763050</updated>
     </task>
     <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52975000" />
+    <option name="totallyTimeSpent" value="89096000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1456" height="876" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.28366762" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2753404" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -265,8 +344,8 @@
       <window_info id="Persistence" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3657858" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36622074" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39966556" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -274,10 +353,9 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32952926" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32943144" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32952926" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32823366" />
-      <window_info anchor="bottom" id="GitLabIntegration" order="14" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="13" visible="true" weight="0.6304348" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -297,9 +375,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit 1 patient name and gender" />
-    <MESSAGE value="last part of HRM" />
-    <MESSAGE value="last part of HRM - complete algorithm except some ..." />
-    <option name="LAST_COMMIT_MESSAGE" value="last part of HRM - complete algorithm except some ..." />
+    <MESSAGE value="new forloop for table and paragraph" />
+    <option name="LAST_COMMIT_MESSAGE" value="new forloop for table and paragraph" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/GiCognition.iml">
@@ -318,10 +395,45 @@
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/poi-ooxml-3.7.jar!/org/apache/poi/xwpf/usermodel/XWPFParagraph.class" />
     <entry file="jar://$PROJECT_DIR$/lib/poi-ooxml-3.7.jar!/org/apache/poi/xwpf/usermodel/XWPFRun.class" />
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_131/src.zip!/javax/swing/JEditorPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="188" column="13" selection-start-line="188" selection-start-column="13" selection-end-line="188" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_131/src.zip!/java/io/FileInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="91" column="11" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DocxManipulator.java" />
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_131/src.zip!/javax/swing/JButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-472">
+          <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ReadFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="801">
-          <caret line="462" column="54" lean-forward="true" selection-start-line="462" selection-start-column="54" selection-end-line="462" selection-end-column="54" />
+        <state relative-caret-position="153">
+          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GiInterface.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GiInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -345,7 +457,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Invalid</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
