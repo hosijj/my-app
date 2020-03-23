@@ -2,21 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aefc68c8-7dc2-442d-9d36-90748d10a897" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Gi-Doc/Hossein - template algorythm2.doc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gi-Doc/~$ssein - template algorythm2.doc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/rtfkit_nosrc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GiInterface.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GiInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/~$pdance.rtf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/dom4j_1_6_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/dom4j_1_6_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GoodToKnowAboutGiCognition.txt" beforeDir="false" afterPath="$PROJECT_DIR$/GoodToKnowAboutGiCognition.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Impdance.rtf" beforeDir="false" afterPath="$PROJECT_DIR$/Impdance.rtf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template.docm" beforeDir="false" afterPath="$PROJECT_DIR$/Template.docm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HRM.docx" beforeDir="false" afterPath="$PROJECT_DIR$/HRM.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Template2.docm" beforeDir="false" afterPath="$PROJECT_DIR$/Template2.docm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GiCognition/ReadFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GiCognition/ReadFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DocxManipulator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GiInterface.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/GiInterface.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GiInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GiInterface.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -86,14 +76,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3556" />
-          <entry key="txt" value="35" />
+          <entry key="java" value="4116" />
+          <entry key="txt" value="65" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3556" />
-          <entry key="PLAIN_TEXT" value="35" />
+          <entry key="JAVA" value="4116" />
+          <entry key="PLAIN_TEXT" value="65" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -127,11 +117,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GiInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
+            <state relative-caret-position="329">
+              <caret line="44" column="88" selection-start-line="44" selection-start-column="88" selection-end-line="44" selection-end-column="88" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -139,7 +129,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/GiInterface.form">
           <provider selected="true" editor-type-id="ui-designer" />
         </entry>
@@ -187,8 +177,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/ReadFile.java" />
-        <option value="$PROJECT_DIR$/src/GiInterface.form" />
         <option value="$PROJECT_DIR$/src/GiInterface.java" />
+        <option value="$PROJECT_DIR$/src/GiInterface.form" />
       </list>
     </option>
   </component>
@@ -209,33 +199,7 @@
       <autoscrollFromSource ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="GiCognition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GiCognition" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GiCognition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GiCognition" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GiCognition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GiCognition" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="GiInterface" type="e9f4de52:FormNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -301,7 +265,7 @@
       <workItem from="1583925166307" duration="6490000" />
       <workItem from="1584604346987" duration="17926000" />
       <workItem from="1584861673428" duration="12349000" />
-      <workItem from="1584936274356" duration="325000" />
+      <workItem from="1584936274356" duration="14061000" />
     </task>
     <task id="LOCAL-00001" summary="commit 1 patient name and gender">
       <created>1583063737234</created>
@@ -324,11 +288,18 @@
       <option name="project" value="LOCAL" />
       <updated>1583204763050</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="read rtf file &#10;add swing class">
+      <created>1584936679028</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1584936679028</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89096000" />
+    <option name="totallyTimeSpent" value="102832000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -344,7 +315,7 @@
       <window_info id="Persistence" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.36622074" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32274246" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39966556" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -376,7 +347,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit 1 patient name and gender" />
     <MESSAGE value="new forloop for table and paragraph" />
-    <option name="LAST_COMMIT_MESSAGE" value="new forloop for table and paragraph" />
+    <MESSAGE value="read rtf file &#10;add swing class" />
+    <option name="LAST_COMMIT_MESSAGE" value="read rtf file &#10;add swing class" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/GiCognition.iml">
@@ -427,18 +399,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GiInterface.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GiInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
+        <state relative-caret-position="329">
+          <caret line="44" column="88" selection-start-line="44" selection-start-column="88" selection-end-line="44" selection-end-column="88" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GiInterface.form">
+      <provider selected="true" editor-type-id="ui-designer" />
     </entry>
   </component>
   <component name="masterDetails">
